@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=Rock+Salt&display=swap');
+@font-face{
+    font-family: 'blanka';
+    src: url(Blanka-Regular.otf);
+}
+:root {
+    --fondo-tema:white;
+    --fondo-nav: #7209b7ff;
+    --modo-noche:#0b0014ff;
+    --login-registro: rgba(255, 255, 255, 0.61);
+    /* este es el color de el logo ssaci y otras*/
+    --color-logo: #7209b7ff;
+
+    --fondo-bl: rgb(255, 255, 255);
+    --color-fecha: rgb(44, 119, 94);
+    --color-hoja: #ffffff9a;
+    --color-inputs:  rgb(255, 255, 255);
+
+    --sombra: -2px 3px 4px 0px #dadada85;
+    --sombra-cajas: -2px 3px 4px 0px rgba(0, 0, 0, 0.301);
+    --sombra-dentro: inset 4px 4px 9px #bebebe;
+
+    --fondo-footer:rgba(153, 153, 153, 0.76);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    padding-top: 90px;
+    font-family: 'Poppins', sans-serif;
+    background: var(--fondo-tema);
+}
+.container_nav{
+    position: fixed;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    height: 70px;
+    top: 0;
+    padding: 0 20px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: var(--sombra);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    transition: all .5s;
+    z-index: 10000;
+}
+.container_nav.abajo{
+    width: 100%;
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+    transition: all 1s;
+}
+/* logos nav*/
+.logos-nav{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+.logos-nav .saci{
+    color: var(--color-logo);
+    font-size: 30px;
+    font-family: 'blanka';
+    font-weight: 800;
+    margin-top: -10px;
+}
+.logos-nav .separa_logos{
+    width: 4px;
+    background-color: rgb(85, 84, 84);
+    height: 50px;
+    border-radius: 5px;
+}
+.logos-nav img{
+    width: 3rem;
+}
+/* --------------------------- */
+.nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav_a{
+    text-decoration: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: black;
+}
+.nav_a:hover,nav p:hover{
+    background: rgba(172, 171, 171, 0.678);
+    color:var(--color-logo);
+    transition: all .4s ;
+}
+.container-hide {
+    transform: translateX(-100%);
+}
+/* foto de perfil, nombre de ususario y rol */
+.cont_user{
+display: flex;
+align-items: center;
+gap: .5rem;
+}
+.img_user{
+    position: relative;
+    top: 10px;
+    right: 0;
+    width: 90px;
+    border-radius: 50%;
+    border: 3.5px solid var(--fondo-tema);
+}
+.nombre_rol{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #7e7e7e;
+}
+.user-nombre{
+    color: var(--color-logo);
+}
+.user-rol{
+    font-size: 13px;
+    font-weight: 500;
+}
+/* ------------------------------------------ */
+.panel-heading{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.ssaci-cont{
+    color: var(--color-logo);
+    font-size: 23px;
+    font-family: 'blanka';
+    font-weight: 800;
+    margin-top: -10px;
+}
+.panel_iconos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.iconos{
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 220px;
+    height: 140px;
+    text-decoration: none;
+    color: #333; /* Color del texto dentro de la tarjeta */
+}
+.iconos h2{
+    text-align: center;
+    border-bottom: 1px solid rgb(216,216,216);
+}
+.iconos:hover h2{
+    background: #bdb1d3a6;
+    border-radius: 6px;
+    transition: background-color .5s;
+}
+/* ------------------------ */
+.contenedor_info_personal{
+    width: 100%;
+    background: #dadadad3;
+    border-radius: 10px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.contenedor_info_personal .foto_user {
+    position:sticky;
+}
+.contenedor_info_personal .foto_user .img_user{
+    top: -50px;
+    width: 170px;
+}
+.contenedor_info_personal .columns{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+}
+.contenedor_info_personal .columns .column .control{
+    width: 300px;
+}
+.contenedor_info_personal .columns .column .control .title{
+    font-size: 16px;
+}
+.contenedor_info_personal .columns .column .control p{
+    font-size: 14px;
+    color:var(--color-logo);
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding-left: 4px;
+}
+.botones-eliminar-editar{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ------------------------- */
+.contenedor_editar_perfil{
+    width: 100%;
+    background: #6d98e7a1;
+    border-radius: 10px;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.box{
+    padding: 10px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: var(--sombra);
+    display: flex;
+    align-items: center;
+}
+.box .columns{
+    
+}
+button{
+    background-color: #00b698;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 7px;
+}
+/* ---------------------- */
+.contenedor_eliminar_perfil{
+    width: 100%;
+    background: #e76d6da1;
+    border-radius: 10px;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.listas{
+    color: #fff;
+    display: flex;
+}
+/*dropdown*/
+.drop_list {
+    border: 1px solid rgb(236,82,82);
+    display: none;
+    
+}
+.drop_list a{
+    color: #fff;
+    display: flex;
+    padding: 10px;
+}
+.drop_list a:hover{
+    background: rgba(255, 255, 255, 0.425);
+    color: #fff;
+}
+.drop_list.active {
+    display: block;
+}
+.drop_arrow{
+    transition: transform .3s;
+}
+.drop_arrow--rotate{
+    transform: rotate(180deg);
+}
+
+/*segundo dropdown*/
+.drop_list_product{
+    border: 1px solid rgb(236,82,82);
+    display: none;
+}
+.drop_list_product a{
+    color: #fff;
+    display: flex;
+    padding: 10px;
+}
+.drop_list_product a:hover{
+    background: rgba(255, 255, 255, 0.425);
+    color: #fff;
+}
+
+.drop_list_product.active2 {
+    display: block;
+}
+
+.drop_arrow2{
+    transition: transform .3s;
+}
+.drop_arrow--rotate2{
+    transform: rotate(180deg);
+}
+/* ----------------------------------------------------------------------------------- */
+.contenedor_derecha{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--fondo-tema);
+    box-shadow: var(--sombra-cajas);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.container-full {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 0 !important;
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+
+.icon_detalles{
+    cursor: pointer;
+}
+
+.formulario_foto input{
+    width: 250px;
+}
+.img_logo{
+    width: 300px;
+}
+.info_completa{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+
+}
+.info_empresa{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-left: 20px;
+    width: 350px;
+}
+
+#contenido{
+    width: 1200px;
+}
+#contenedorMain{
+    border: 1px solid gray;
+}
+.error{
+    color: red;
+    font-size: 1rem;
+    padding-left: 31px;
+}
+
+#buscador{
+    display: none;
+}
