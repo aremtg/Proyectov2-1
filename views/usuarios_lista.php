@@ -1,18 +1,15 @@
 <article class="panel-heading"> 
-        <div class="is-flex">
-            <h3 class="is-size-2 pt+1">
-            USUARIOS
-            </h3>
-        </div>
+    <h3 class="is-size-2 pt+1">
+        USUARIOS
+    </h3>
 
-        <p class="is-size-6">
-            Estimado usuario, recuerde que las modificaciones realizadas en este apartado no se podran modificar despues de 24horas!
-        </p>     
+    <p class="is-size-6">
+        Estimado usuario, recuerde que las modificaciones realizadas en este apartado no se podran modificar despues de 24horas!
+    </p>     
 
-    </article>
+</article>
 
-    <div class="tabs is-centered is-boxed">
-    <ul>
+    <ul class="ul-mini-nav">
         <li >
             <a href="index.php?vista=usuario_nuevo">
                 <span>AGREGAR</span>
@@ -31,7 +28,6 @@
             </a>
         </li>
     </ul>
-    </div>
 
 <?php 
     if(!isset($_GET['page'])){

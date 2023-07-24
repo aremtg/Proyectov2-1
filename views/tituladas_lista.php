@@ -1,15 +1,14 @@
 <article class="panel-heading"> 
-        <div class="is-flex">
-            <h3 class="is-size-2">
-            TITULADAS
-            </h3>
-        </div>
+       
+    <h3 class="is-size-2">
+    TITULADAS
+    </h3>
 
-        <p class="is-size-6">
-            Tituladas activas!
-        </p>     
+    <p class="is-size-6">
+        Tituladas activas!
+    </p>     
 
-    </article>
+</article>
 
 <?php if(isset($_SESSION['fichaExiste'] )): ?>
 
@@ -26,14 +25,13 @@
         <?= $_SESSION['titulada-error'] ; ?>
     </div>
 <?php endif; ?>
-
+<!-- 
 <div class="mb-3">
 <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'nombreTitulada'):"" ;?>
 <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'ficha'):"" ;?>
-</div>
+</div> -->
 
-    <div class="tabs is-centered is-boxed">
-    <ul>
+    <ul class="ul-mini-nav">
         <li >
             <a class="js-modal-trigger" data-target="modal_agg_titulada">
                 <span>AGREGAR</span>
@@ -46,10 +44,6 @@
             </a>
         </li>
     </ul>
-    </div>
-
-
-
 
     <?php 
     if(!isset($_GET['page'])){
@@ -73,47 +67,41 @@
 
 <!-- ####### ESTE ES EL MODAL PARA AGREGAR TITULADAS VA UNIDO AL BOTON AGREGAR EN LA LINEA 17 ####### -->
 <div class="modal" id="modal_agg_titulada" >
-    <div class="modal-background"></div>
-    <div class="modal-card">
         <header class="modal-card-head">
             <p class="modal-card-title">Agregar Titulada</p>
             <button class="delete" aria-label="close"></button>
         </header>
-    <section class="modal-card-body" >
 
     <!-- Contenido del modal-->
-<form action="./php/guardar_titulada.php" method="POST" autocomplete="off" id="modal-tituladas" >
-        <div class="mb-3">
-            <label for="nombre_titulada" class="label">Nombre Titulada:</label>
-            <input class="input" type="text" name="nombre_titulada" pattern="[0-9a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,40}" >
+    <form action="./php/guardar_titulada.php" method="POST" autocomplete="off" id="modal-tituladas" >
+            <div class="mb-3">
+                <label for="nombre_titulada" class="label">Nombre Titulada:</label>
+                <input class="input" type="text" name="nombre_titulada" pattern="[0-9a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,40}" >
+            </div>
+
+            <div class="mb-3">
+            <label for="ficha" class="label">Ficha Titulada:</label>
+            <input type="text" name="ficha" class="input" pattern="[0-9]{3,10}">
+            </div>
+
+            <div class="checkbox">
+            <label for="jornada" class="label">Jornada</label>
+                    <div class="control select">
+                        <select name="jornada">
+                        <option value="Mañana">Mañana</option>
+                        <option value="Tarde">Tarde</option>
+                        <option value="Noche">Noche</option>
+                        </select>
+                    </div>
+            </div>
+        </section>
+        
+                <footer class="modal-card-foot">
+                    <button type="submit" class="button is-success title is-6"><img src="./images/save.png" class="mr-1">Agregar</button>
+                </footer>
+
         </div>
-
-        <div class="mb-3">
-        <label for="ficha" class="label">Ficha Titulada:</label>
-        <input type="text" name="ficha" class="input" pattern="[0-9]{3,10}">
-        </div>
-
-        <div class="checkbox">
-        <label for="jornada" class="label">Jornada</label>
-                <div class="control select">
-                    <select name="jornada">
-                    <option value="Mañana">Mañana</option>
-                    <option value="Tarde">Tarde</option>
-                    <option value="Noche">Noche</option>
-                    </select>
-                </div>
-        </div>
-    </section>
-    
-            <footer class="modal-card-foot">
-                <button type="submit" class="button is-success title is-6"><img src="./images/save.png" class="mr-1">Agregar</button>
-            </footer>
-
-    </div>
-</form>    
-<!-- se acaba el contenido del modal -->
-
-</div>
+    </form>    
 </div>
 <!-- SE ACABA LA SECCION DEL MODAL -->
 

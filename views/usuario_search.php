@@ -1,18 +1,15 @@
 <article class="panel-heading"> 
-        <div class="is-flex">
-            <h3 class="is-size-2">
-            BUSCAR USUARIO
-            </h3>
-        </div>
+    <h3 class="is-size-2">
+        BUSCAR USUARIO
+    </h3>
 
-        <p class="is-size-6">
-            Recuerda que puedes buscar el usuario por nombres o numero de documento!
-        </p>     
+    <p class="is-size-6">
+        Recuerda que puedes buscar el usuario por nombres o numero de documento!
+    </p>     
 
     </article>
 
-    <div class="tabs is-centered is-boxed">
-    <ul>
+    <ul class="ul-mini-nav">
         <li >
             <a href="index.php?vista=usuario_nuevo">
                 <span>AGREGAR</span>
@@ -31,7 +28,6 @@
             </a>
         </li>
     </ul>
-    </div>
 
     <?php
     if(isset($_POST['modulo_buscador'])){

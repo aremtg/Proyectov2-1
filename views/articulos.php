@@ -8,8 +8,7 @@
         </p>     
 </article>
 
-<div class="tabs is-centered is-boxed">
-    <ul>
+    <ul class="ul-mini-nav">
         <li>
             <a href="index.php?vista=articulo_nuevo">
                 <span>AGREGAR</span>
@@ -22,7 +21,7 @@
             </a>
         </li>
     </ul>
-</div>
+
 
 <!-- SECCION PARA EL BUSCADOR CON PHP -->
 <div class="mb-4">

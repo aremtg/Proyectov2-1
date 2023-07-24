@@ -8,8 +8,7 @@
         </p>     
 </article>
 
-<div class="tabs is-centered is-boxed">
-    <ul>
+    <ul class="ul-mini-nav">
         <li class="is-active">
             <a href="index.php?vista=aprendiz_nuevo">
                 <span>AGREGAR</span>
@@ -22,7 +21,6 @@
             </a>
         </li>
     </ul>
-</div>
 
     <?php if(isset($_SESSION['registrado'] )): ?>
 

@@ -4,10 +4,10 @@ if(!empty($datos_user)):
 ?>
 
 <article class="panel-heading mb-5"> 
-    <div class="is-flex">
-        <h3 class=" is-size-2 has-text-success-dark mb-3" >INFORMACION PERSONAL</h3>
-    </div>
-    <p class="is-size-5 has-text-dark">
+    <h3 class="" >
+        INFORMACION PERSONAL
+    </h3>
+    <p class="">
         <?= $datos['nombre_usuario'];?> Aqui puedes ver o editar tu perfil.
     </p>     
 </article>
@@ -38,7 +38,23 @@ if(!empty($datos_user)):
 
 <div class="contenedor_info_personal">
     <div class="foto_user">
-    <img class="img_user" src="./images/user.png" alt="Foto de perfil" >
+        <img class="img_user" src="./images/user.png" alt="Foto de perfil" >
+    </div>
+    
+    <div class="columns">
+        <div class="column">
+            <div class="control">
+                <h1 class="title is-5">Nombres</h1>
+                <p class="is-size-5"><?= $datos['nombre_usuario'];?></p>
+            </div>
+            </div>
+
+        <div class="column">
+            <div class="control">
+                <h1 class="title is-5">Apellidos</h1>
+                <p class="is-size-5"><?= $datos['apellido_usuario'];?></p>
+            </div>
+        </div>
     </div>
     <div class="columns">
         <div class="column">
@@ -55,23 +71,6 @@ if(!empty($datos_user)):
             </div>
         </div>
     </div>
-
-    <div class="columns">
-        <div class="column">
-            <div class="control">
-                <h1 class="title is-5">Nombres</h1>
-                <p class="is-size-5"><?= $datos['nombre_usuario'];?></p>
-            </div>
-            </div>
-
-            <div class="column">
-                <div class="control">
-                    <h1 class="title is-5">Apellidos</h1>
-                    <p class="is-size-5"><?= $datos['apellido_usuario'];?></p>
-                </div>
-            </div>
-    </div>
-    
     <div class="columns">
         <div class="column">
             <div class="control">
@@ -95,12 +94,13 @@ if(!empty($datos_user)):
 
 <!-- ESTE ES EL MODAL PARA LA ACTUALIZACION DEL PERFIL VA UNIDO AL BOTON EDITAR PERFIL -->
 <div class="contenedor_editar_perfil" id="modal_update_perfil" >
-    <div class="modal-card" id="modal-card">
+
         <header class="modal-card-head">
-            <p class="modal-card-title">Editar Perfil</p>
-            <button class="delete" aria-label="close"></button>
+            <h3 class=" is-size-2 has-text-success-dark mb-3" >
+                Editar perfil
+            </h3>
+            <button class="delete" aria-label="close">nada</button>
         </header>
-        <section class="modal-card-body" >
                 <!-- Contenido del modal-->
             <form action="./php/update_perfil.php" class="box" autocomplete="off" id="perfil_up_form"  method="POST">
 
@@ -182,11 +182,7 @@ if(!empty($datos_user)):
                     </div>
 
                 </div>
-            </form>    
-        </section>
-
-        <!-- se acaba el contenido del modal -->
-        </div>
+            </form>
 </div>
 <!-- SE ACABA LA SECCION DEL MODAL -->
 
@@ -195,46 +191,36 @@ if(!empty($datos_user)):
 
 <!-- ####### ESTE ES EL MODAL PARA ELIMINAR EL PERFIL VA UNIDO AL BOTON ELIMINAR ####### -->
 <div class="contenedor_eliminar_perfil" id="modal_del_perfil" >
-    <div class="modal-background"></div>
-    <div class="modal-card">
         <header class="modal-card-head">
             <p class="modal-card-title">Eliminar Usuario</p>
             <button class="delete" aria-label="close"></button>
         </header>
-    <section class="modal-card-body" >
-
     <!-- Contenido del modal-->
     
     <div class="mb-4">
         <strong class="has-text-danger">Advertencia!</strong>¿Estas seguro de eliminar este usuario?, se elimanara de forma permanente!
     </div>
-<form action="./php/delete_user.php" method="POST" autocomplete="off" id="form_delete">
-        <div class="mb-3">
-                <label for="usuario_del" class="label">Usuario:</label>
-                <input type="text" class="input" value="<?= $datos['usuario_usuario'];?>" disabled>
-                <input type="hidden" name="usuario_del" value="<?= $datos['usuario_usuario'];?>">
-        </div>
+    <form action="./php/delete_user.php" method="POST" autocomplete="off" id="form_delete">
+            <div class="mb-3">
+                    <label for="usuario_del" class="label">Usuario:</label>
+                    <input type="text" class="input" value="<?= $datos['usuario_usuario'];?>" disabled>
+                    <input type="hidden" name="usuario_del" value="<?= $datos['usuario_usuario'];?>">
+            </div>
 
-        <div class="mb-3">
-        <label for="confir_clave" class="label">Confirmar Contraseña</label>
-        <input type="password" name="confirm_clave" class="input" id="confirm_pass" disabled>
-        </div>
+            <div class="mb-3">
+            <label for="confir_clave" class="label">Confirmar Contraseña</label>
+            <input type="password" name="confirm_clave" class="input" id="confirm_pass" disabled>
+            </div>
 
-        <div class="checkbox">
-            <input type="checkbox" name="delete" id="check_confirm">
-            <label for="delete" class="has-text-danger">Al eliminar la cuenta se borraran los aprendices registrados!</label>
-        </div>
-    </section>
-    
-            <footer class="modal-card-foot">
-                <button type="submit" class="button is-danger title is-6"><img src="./images/delete.png" class="mr-1">Eliminar</button>
-            </footer>
-
-    </div>
-</form>    
-<!-- se acaba el contenido del modal -->
-
-</div>
+            <div class="checkbox">
+                <input type="checkbox" name="delete" id="check_confirm">
+                <label for="delete" class="has-text-danger">Al eliminar la cuenta se borraran los aprendices registrados!</label>
+            </div>
+        
+                <footer class="modal-card-foot">
+                    <button type="submit" class="button is-danger title is-6"><img src="./images/delete.png" class="mr-1">Eliminar</button>
+                </footer>
+    </form>    
 </div>
 <!-- SE ACABA LA SECCION DEL MODAL -->
 

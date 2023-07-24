@@ -6,9 +6,7 @@
             Articulos registrados!
         </p>     
 </article>
-
-<div class="tabs is-centered is-boxed">
-    <ul>
+    <ul class="ul-mini-nav">
         <li class="is-active">
             <a href="index.php?vista=articulo_nuevo">
                 <span>AGREGAR</span>
@@ -22,7 +20,6 @@
         </li>
 
     </ul>
-</div>
 
     <?php if(isset($_SESSION['registrado'] )): ?>
 

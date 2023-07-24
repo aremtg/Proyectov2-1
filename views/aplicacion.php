@@ -11,22 +11,13 @@
     <link rel="stylesheet" href="../css/aplicacion.css">
 </head>
 <body>
-
-    <div class="contenido">
-    <div class="ventana box">
         <form action="./resultado_aplicacion.php" method="POST" autocomplete="off" >
-            <div class="field">
-                <label class="label">Documento</label>
-                <div class="control">
-                <input class="input" type="text" placeholder="# Documento" name="consulta" >
-                </div>
-            </div>
-            <div class="has-text-centered">
-            <button type="submit" class="btn-ingresar button is-success">Ingresar</button>
-            </div>
+            <label for="input-doc" class="label">Ingrese el documento del aprendiz</label>
+                    <input class="input" id="input-doc" type="text" placeholder="# Documento" name="consulta" >
+                <button type="submit" class="btn-ingresar">Ingresar</button>
+
             <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'documento'):"" ?>
         </form>
-    </div>
     <?php BorrarErrores(); ?>
 
 </body>

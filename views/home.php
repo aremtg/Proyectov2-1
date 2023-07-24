@@ -1,7 +1,5 @@
     <article class="panel-heading"> 
-            <div class="is-flex">
-                <h3 class=" is-size-2" ><span class="ssaci-cont">SSACI</span> para el SENA</h3>
-            </div>
+    <h3 class=" is-size-2" ><span class="ssaci-cont">SSACI</span> para el SENA</h3>
             <p class="is-size-6 ">
                 Sistema de Seguimiento y Control de Ingreso...
             </p>     
@@ -42,7 +40,8 @@
     
 </div><!--cerramos contenedor para los botones de navegacion-->
 
-<div class="has-text-centered mt-6">
+<div class="a_iniciar_aplicacion">
+    <img class="img_guardia" src="./images/guardia-home.svg" alt="">
     <a href="./views/aplicacion.php" target="_blank" class="button is-primary is-medium title is-4">Iniciar Aplicación</a>
 </div>
 

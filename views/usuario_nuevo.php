@@ -1,14 +1,11 @@
 <article class="panel-heading mb-5"> 
-    <div class="is-flex">
-            <h3 class=" is-size-2 " >Nuevo usuario</h3>
-    </div>
+        <h3 class=" is-size-2 " >Nuevo usuario</h3>
         <p class="is-size-5">
             Completa el formulario para registrar el nuevo usuario
         </p>     
 </article>
 
-<div class="tabs is-centered is-boxed">
-    <ul>
+    <ul class="ul-mini-nav">
         <li class="is-active">
             <a href="index.php?vista=usuario_nuevo">
                 <span>AGREGAR</span>
@@ -27,7 +24,6 @@
             </a>
         </li>
     </ul>
-</div>
 
     <?php if(isset($_SESSION['registrado'] )): ?>
 
