@@ -21,14 +21,12 @@ if(mysqli_num_rows($check)==1){
 }?>
 
 <article class="panel-heading mb-3"> 
-<div class="is-flex">
-            <p class="" >Datos del aprendiz</p>
-    </div>
-        <h3 class="is-size-6 mt-2">Registrado por <?=$datos['nombre usuario'] ?> </h3>     
+    <p class="" >Datos del aprendiz</p>
+    <h3 class="is-size-6 mt-2">Registrado por <?=$datos['nombre usuario'] ?> </h3>     
 </article>
 
 <div class="mt-3">
-    <div class="columns box mb-5">
+    <div class="columns">
         <div class="column p-0">
             <h1 class="title is-6 m-0">Tipo de Documento</h1>
             <p class="is-size-6 mt-2"><?= $datos['tipoDoc_aprendiz']; ?></p>
@@ -47,7 +45,7 @@ if(mysqli_num_rows($check)==1){
 </div>
 
 <div>
-    <div class="columns box mb-5">
+    <div class="columns">
     <div class="column p-0">
             <h1 class="title is-6 m-0">Apellidos</h1>
             <p class="is-size-6 mt-2"><?= $datos['apellido_aprendiz'];?></p>
@@ -65,7 +63,7 @@ if(mysqli_num_rows($check)==1){
     </div>
 </div>
 <div>
-    <div class="columns box mb-5">
+    <div class="columns">
     <div class="column p-0">
             <h1 class="title is-6 m-0">Titulada</h1>
             <p class="is-size-6 mt-2"><?= $datos['nombre_titulada'];?></p>
@@ -91,7 +89,7 @@ if(mysqli_num_rows($check)==1){
 </article>
 
 <div class="mt-3">
-    <div class="columns box mb-5">
+    <div class="columns">
         <div class="column p-0">
             <h1 class="title is-6 m-0">Articulo 1</h1>
             <p class="is-size-6 mt-2"><?= $datos['nombre_articulo'];?></p>
@@ -108,7 +106,7 @@ if(mysqli_num_rows($check)==1){
     </div>
 </div>
 <div>
-    <div class="columns box mb-5">
+    <div class="columns">
         <div class="column p-0">
             <h1 class="title is-6 m-0">Articulo 2</h1>
             <p class="is-size-6 mt-2"><?= $datos['nombre_articulo_2'];?></p>

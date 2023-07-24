@@ -34,6 +34,7 @@ body{
     font-family: 'Poppins', sans-serif;
     background: var(--fondo-tema);
 }
+/* comienza navegador */
 .container_nav{
     position: fixed;
     width: 95%;
@@ -138,7 +139,7 @@ display: flex;
 align-items: center;
 gap: .5rem;
 }
-.img_user{
+.cont_user .img_user{
     width: 65px;
     border-radius: 50%;
     border: 3.5px solid var(--fondo-tema);
@@ -153,10 +154,24 @@ gap: .5rem;
     color: var(--color-logo);
 }
 .user-rol{
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
 }
-/* ------------------------------------------ */
+/* termina navegador*/
+/* contenedor general-contenido */
+.contenedor_derecha{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--fondo-tema);
+    box-shadow: var(--sombra-cajas);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+/* --------comienza home--------- */
 .panel-heading{
     display: flex;
     flex-direction: column;
@@ -182,20 +197,22 @@ gap: .5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 220px;
-    height: 140px;
     text-decoration: none;
-    color: #333; /* Color del texto dentro de la tarjeta */
 }
 .iconos h2{
+    color: #333;
     text-align: center;
     border-bottom: 1px solid rgb(216,216,216);
+}
+.iconos p{
+    text-align: center;
+    color: #000;
 }
 .iconos:hover h2{
     background: #bdb1d3a6;
     border-radius: 6px;
     transition: background-color .5s;
 }
-/* --------home--------- */
 .a_iniciar_aplicacion{
     display: flex;
     align-items: center;
@@ -215,91 +232,136 @@ gap: .5rem;
 .a_iniciar_aplicacion .img_guardia{
     width: 300px;
 }
-/* ------------------------ */
-.contenedor_info_personal{
+/* termina home*/
+/* comienza articulos */
+/* termina articulos */
+
+/* comienza aprendices*/
+/* termina aprendices */
+
+/* comienza tituladas */
+/* termina tituladas */
+
+/* comienza lista de registros */
+/* termina lista de registro */
+
+/* comienza usuarios */
+/* termina usuarios */
+
+/* comiena perfil */
+.modal-info-perfil{
     width: 100%;
-    background: #dadadad3;
-    border-radius: 10px;
-    padding: 10px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-
     flex-wrap: wrap;
     gap: 1rem;
 }
-.contenedor_info_personal .foto_user .img_user{
-    top: -50px;
-    width: 170px;
+.modal-info-perfil .info-foto-perfil{
+    display: flex;
+    align-items:center;
+    justify-content:center ;
 }
-.contenedor_info_personal .columns{
+.modal-info-perfil .info-foto-perfil .img_user{
+    width: 200px;
+    border-radius: 50%;
+    border: 3.5px solid var(--fondo-tema);
+}
+.modal-info-perfil .columns .column .control h1{
+    font-size: 20px;
+    color: #7e7e7e;
+}
+.modal-info-perfil .info-botones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+.modal-info-perfil .button{
+    border: none;
+    background-color: #7109b750;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px;
+    height: 40px;
+}
+.modal{
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    overflow: hidden;
+    position: fixed;
+    z-index: 40;
+    display: none;
+}
+.modal.is-active{
+    display: flex;
+}
+.modal-background {
+    background-color: rgba(10,10,10,.86);
+}
+.modal-background {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#modal-card {
+    width: 1100px;
+}
+.modal-card {
     display: flex;
     flex-direction: column;
-    gap: 1rem; 
+    max-height: calc(100vh - 40px);
+    overflow: hidden;
+    -ms-overflow-y: visible;
 }
-.contenedor_info_personal .columns .column .control{
-    width: 300px;
-}
-.contenedor_info_personal .columns .column .control .title{
-    font-size: 16px;
-}
-.contenedor_info_personal .columns .column .control p{
-    font-size: 14px;
-    color:var(--color-logo);
-    background-color: rgb(255, 255, 255);
-    border-radius: 4px;
-    padding-left: 4px;
-}
-.botones-eliminar-editar{
-    display: flex;
+.modal-card-head {
     align-items: center;
-    gap: .5rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-/* ------------------------- */
-.contenedor_editar_perfil{
-    width: 100%;
-}
-.contenedor_editar_perfil header{
-    text-align: center;
-}
-.contenedor_editar_perfil form{
-    width: 100%;
-    background: #a4c0f3a1;
-    border-radius: 10px;
-    padding: 5px 0;
+    background-color: #f5f5f5;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    padding: 20px;
+    position: relative;
 }
-.box{
-    padding: 10px;
-    border-radius: 10px;
-    background: white;
-    box-shadow: var(--sombra);
-    display: flex;
-    align-items: center;
-}
-button{
-    background-color: #00b698;
-    color: white;
+.delete{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: rgba(10,10,10,.2);
     border: none;
-    padding: 5px;
-    border-radius: 7px;
+    border-radius: 9999px;
+    cursor: pointer;
+    pointer-events: auto;
+    display: inline-block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 0;
+    height: 20px;
+    max-height: 20px;
+    max-width: 20px;
+    min-height: 20px;
+    min-width: 20px;
+    outline: 0;
+    position: relative;
+    vertical-align: top;
+    width: 20px;
 }
-/* ---------------------- */
-.contenedor_eliminar_perfil{
-    width: 100%;
-    background: #e76d6da1;
-    border-radius: 10px;
-    padding: 5px 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+.modal-card-body {
+    background-color: #fff;
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow: auto;
+    padding: 20px;
 }
 /* ----------- */
 .ul-mini-nav{
@@ -336,7 +398,8 @@ button{
     border-radius: 4px;
     padding: 1px 4px;
 }
-
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
 .listas{
     color: #dd1919;
     display: flex;
@@ -392,18 +455,6 @@ button{
     transform: rotate(180deg);
 }
 /* ----------------------------------------------------------------------------------- */
-.contenedor_derecha{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-    border-radius: 10px;
-    background: var(--fondo-tema);
-    box-shadow: var(--sombra-cajas);
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
 .container-full {
     position: absolute;
     top: 0;
@@ -421,6 +472,9 @@ button{
     cursor: pointer;
 }
 
+.field input{
+    width: 350px;
+}
 .formulario_foto input{
     width: 250px;
 }
@@ -444,7 +498,6 @@ button{
     margin-left: 20px;
     width: 350px;
 }
-
 #contenido{
     width: 1200px;
 }
@@ -454,22 +507,42 @@ button{
 .error{
     color: red;
     font-size: 1rem;
-    padding-left: 31px;
 }
 
+#modal-card{
+    width: 1100px;
+}
 #buscador{
     display: none;
 }
-
+/* --------------------- */
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a0a0a0;
+}
+.pagination_a img{
+    width: 20px;
+}
+.pagination ul li a{
+    text-decoration: none;
+    color: #000;
+    padding: 2px;
+    border-radius: 10px;
+    background-color: white;
+}
 @media screen and (max-width: 733px) {
     .nav, .cont_user, .salir_a{
       display: none;
-
-  }
-  .container_nav{
-    justify-content: center;
-  }
-  .a_iniciar_aplicacion  .img_guardia{
-    width: 200px;
-  }
+    }
+    .container_nav{
+        justify-content: center;
+    }
+    .a_iniciar_aplicacion  .img_guardia{
+        width: 200px;
+    }
+    .modal-info-perfil .info-foto-perfil .img_user{
+        width: 150px;
+    }
 }

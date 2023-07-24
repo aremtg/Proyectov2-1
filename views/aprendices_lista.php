@@ -1,10 +1,8 @@
-<article class="panel-heading"> 
-        <div class="is-flex">
-            <h3 class="is-size-2">
-            APRENDICES
-            </h3>
-        </div>
+    <article class="panel-heading"> 
 
+        <h3 class="is-size-2">
+        APRENDICES
+        </h3>
         <p class="is-size-6">
             Aprendices Activos!
         </p>     

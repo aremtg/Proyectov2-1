@@ -1,11 +1,7 @@
 
 <article class="panel-heading mb-5"> 
-    <div class="is-flex">
-            <h3 class=" is-size-2 " >Nuevo Aprendiz</h3>
-    </div>
-        <p class="is-size-5">
-            Completa el formulario para registrar el nuevo aprendiz
-        </p>     
+    <h3 class=" is-size-2 " >Nuevo Aprendiz</h3>
+    <p class="is-size-5">Completa el formulario para registrar el nuevo aprendiz</p>     
 </article>
 
     <ul class="ul-mini-nav">
