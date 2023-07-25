@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const contenedor_conten = document.querySelector('.contenedor_derecha');
     $el.classList.add('is-active');
     }
-
+// agregar estilos a l contenedor cont 
     function closeModal($el) {
     $el.classList.remove('is-active');
     }
