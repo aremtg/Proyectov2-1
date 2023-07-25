@@ -140,7 +140,7 @@ align-items: center;
 gap: .5rem;
 }
 .cont_user .img_user{
-    width: 65px;
+    width: 57px;
     border-radius: 50%;
     border: 3.5px solid var(--fondo-tema);
 }
