@@ -24,7 +24,7 @@
 
 
 <!-- SECCION PARA EL BUSCADOR CON PHP -->
-<div class="mb-4">
+<div class="buscador_php">
         <form action="" method="POST" autocomplete="off">
             <label for="search" class="label">Ingrese que articulo deseas buscar con PHP</label>
         <input class="input mb-3" type="search" name="busqueda"> 

@@ -440,15 +440,26 @@ gap: .5rem;
 }
 /* ------------------------ */
 .table-container{
-    background-color:rgba(113, 9, 183, 0.234);
+    width: 100%;
+    background-color:rgba(189, 186, 186, 0.234);
     padding: 5px;
     border-radius: 3px;
 }
-
+.table-container table {
+    width: 100%;
+    border-collapse: separate;
+}
+.table-container table thead,.table-container table tr th{
+    border: 1px solid rgb(191, 191, 236);
+}
 .table-container table thead tr th{
     background-color: #ffffff;
     border-radius: 4px;
-    padding: 1px 4px;
+    font-size: 14px;
+}
+.no_hay_registros{
+    width: 100%;
+    text-align: center;
 }
 /* ---------------------------------------------------------- */
 /* ---------------------------------------------------------- */

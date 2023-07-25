@@ -82,7 +82,7 @@
         }else{
             $tabla.='
             <tr class="has-text-centered" >
-            <td colspan="7">
+            <td colspan="7"  class="no_hay_registros">
                 No hay registros en el sistema!
             </td>
             </tr>
