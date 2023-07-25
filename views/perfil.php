@@ -202,38 +202,37 @@ if(!empty($datos_user)):
 <div class="modal" id="modal_del_perfil" >
     <div class="modal-background"></div>
     <div class="modal-card">
-        <header class="modal-card-head">
-            <p class="modal-card-title">Eliminar Usuario</p>
-            <button class="delete" aria-label="close"></button>
-        </header>
-    <section class="modal-card-body" >
+            <header class="modal-card-head">
+                <p class="modal-card-title">Eliminar Usuario</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+        <section class="modal-card-body" >
+            <!-- Contenido del modal-->
+            
+            <div class="mb-4">
+                <strong class="has-text-danger">Advertencia!</strong>¿Estas seguro de eliminar este usuario?, se elimanara de forma permanente!
+            </div>
+            <form action="./php/delete_user.php" method="POST" autocomplete="off" id="form_delete">
+                <div class="mb-3">
+                        <label for="usuario_del" class="label">Usuario:</label>
+                        <input type="text" class="input" value="<?= $datos['usuario_usuario'];?>" disabled>
+                        <input type="hidden" name="usuario_del" value="<?= $datos['usuario_usuario'];?>">
+                </div>
 
-    <!-- Contenido del modal-->
-    
-    <div class="mb-4">
-        <strong class="has-text-danger">Advertencia!</strong>¿Estas seguro de eliminar este usuario?, se elimanara de forma permanente!
-    </div>
-<form action="./php/delete_user.php" method="POST" autocomplete="off" id="form_delete">
-        <div class="mb-3">
-                <label for="usuario_del" class="label">Usuario:</label>
-                <input type="text" class="input" value="<?= $datos['usuario_usuario'];?>" disabled>
-                <input type="hidden" name="usuario_del" value="<?= $datos['usuario_usuario'];?>">
-        </div>
+                <div class="mb-3">
+                <label for="confir_clave" class="label">Confirmar Contraseña</label>
+                <input type="password" name="confirm_clave" class="input" id="confirm_pass" disabled>
+                </div>
 
-        <div class="mb-3">
-        <label for="confir_clave" class="label">Confirmar Contraseña</label>
-        <input type="password" name="confirm_clave" class="input" id="confirm_pass" disabled>
-        </div>
-
-        <div class="checkbox">
-            <input type="checkbox" name="delete" id="check_confirm">
-            <label for="delete" class="has-text-danger">Al eliminar la cuenta se borraran los aprendices registrados!</label>
-        </div>
-    </section>
-    
-            <footer class="modal-card-foot">
-                <button type="submit" class="button is-danger title is-6"><img src="./images/delete.png" class="mr-1">Eliminar</button>
-            </footer>
+                <div class="checkbox">
+                    <input type="checkbox" name="delete" id="check_confirm">
+                    <label for="delete" class="has-text-danger">Al eliminar la cuenta se borraran los aprendices registrados!</label>
+                </div>
+        </section>
+        
+                <footer class="modal-card-foot">
+                    <button type="submit" class="button is-danger title is-6"><img src="./images/delete.png" class="mr-1">Eliminar</button>
+                </footer>
 
     </div>
 </form>    

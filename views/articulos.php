@@ -24,14 +24,14 @@
 
 
 <!-- SECCION PARA EL BUSCADOR CON PHP -->
-<div class="buscador_php">
-        <form action="" method="POST" autocomplete="off">
+<div class="box_buscador">
+    <form action="" method="POST" autocomplete="off">
             <label for="search" class="label">Ingrese que articulo deseas buscar con PHP</label>
-        <input class="input mb-3" type="search" name="busqueda"> 
-        <br>
-        <button class="button is-link" type="submit" name="enviar">Buscar</button> 
+            <input class="input mb-3" type="search" name="busqueda"> 
+            <button class="button is-link" type="submit" name="enviar">Buscar</button>
+    </form>
 </div>
-
+<hr>
 <?php $where="";
 
 if(isset($_POST['enviar'])){
@@ -44,14 +44,15 @@ if(isset($_POST['enviar'])){
 <!-- TERMINA LA SECCION DEL BUSCADOR -->
 
 <!-- SECCION PARA EL BUSCADOR CON js -->
-<!-- <div class="container-fluid">
+ <div class="box_buscador">
     <form class="d-flex">
-    <label for="search" class="label">Ingrese que articulo deseas buscar con JS</label>
+        <label for="search" class="label">Ingrese que articulo deseas buscar con JS</label>
         <input class="light-table-filter input" data-table="table_id" type="text">
-        <hr>
+        <button class="button is-link" type="submit" name="enviar">Buscar</button>
     </form>
-</div> -->
+</div> 
 <!-- TERMINA LA SECCION DEL BUSCADOR -->
+<hr>
 <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth table_id">
     <thead>
         <tr class="has-text-centered">

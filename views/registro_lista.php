@@ -1,9 +1,9 @@
 <article class="panel-heading mb-5"> 
-    <div class="is-flex">
+
         <h3 class="is-size-2 pt+1">
-        Registros
+        REGISTROS
         </h3>
-    </div>
+
 
     <p class="is-size-6">
         Todos los registros!
