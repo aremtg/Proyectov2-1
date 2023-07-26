@@ -1,10 +1,8 @@
 <article class="panel-heading mb-5"> 
-    <div class="is-flex">
-            <h3 class=" is-size-2 " >ARTICULOS</h3>
-    </div>
-        <p class="is-size-5">
-            Articulos registrados!
-        </p>     
+    <h3 class=" is-size-2 " >ARTICULOS</h3>
+    <p class="is-size-5">
+        Articulos registrados!
+    </p>     
 </article>
     <ul class="ul-mini-nav">
         <li class="is-active">
