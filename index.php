@@ -15,7 +15,7 @@ if(is_file('./views/'.$_GET['vista'].'.php') &&  $_GET['vista'] != 'login'){
     include('./views/nav_left.php');
     include('./views/'.$_GET['vista'].'.php');
     include('./includes/script.php');
-
+    // quiero agregar el footer
 }else{
 
     if($_GET['vista']=='login'){
@@ -27,5 +27,9 @@ if(is_file('./views/'.$_GET['vista'].'.php') &&  $_GET['vista'] != 'login'){
 }
 ?>
 </div><!--  se cierra contenedor derecha -->
+<?php
+    include('./includes/footer.php');
+?>
+    
 </body>
 </html>

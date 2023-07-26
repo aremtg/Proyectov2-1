@@ -10,7 +10,7 @@ body{
     align-items: center;
     background-image: linear-gradient(to bottom, #ffffff, #d4c9f4, #af93e5, #8f5ad0, #7209b7);
 }
-.texto{
+.cont .texto{
     margin-bottom: -80px;
     font-weight: 500;
     font-size: 3rem;

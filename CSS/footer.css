@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=Rock+Salt&display=swap');
+@font-face{
+    font-family: 'blanka';
+    src: url(Blanka-Regular.otf);
+}
+:root {
+    --fondo-tema:rgb(255, 255, 255);
+    --fondo-nav: #7209b7ff;
+    --modo-noche:#0b0014ff;
+    --login-registro: rgba(255, 255, 255, 0.61);
+    /* este es el color de el logo ssaci y otras*/
+    --color-logo: #7209b7ff;
+
+    --fondo-bl: rgb(255, 255, 255);
+    --color-fecha: rgb(44, 119, 94);
+    --color-hoja: #ffffff9a;
+    --color-inputs:  rgb(255, 255, 255);
+
+    --sombra: -2px 3px 4px 0px #dadada85;
+    --sombra-cajas: -2px 3px 4px 0px rgba(0, 0, 0, 0.301);
+    --sombra-dentro: inset 4px 4px 9px #bebebe;
+
+    --fondo-footer:rgba(153, 153, 153, 0.76);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: inherit;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: var(--fondo-tema);
+}
+footer{
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 0;
+    background-color: aliceblue;
+    gap: 2rem;
+}
+.ssaci-cont{
+    color: var(--color-logo);
+    font-size: 30px;
+    font-family: 'blanka';
+    font-weight: 800;
+    margin-top: -10px;
+}

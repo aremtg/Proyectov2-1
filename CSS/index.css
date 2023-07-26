@@ -661,3 +661,6 @@ gap: .5rem;
         width: 150px;
     }
 }
+.contenedor_derecha .texto{
+    display: flex;
+}
