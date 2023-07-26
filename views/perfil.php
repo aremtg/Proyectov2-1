@@ -88,8 +88,8 @@ if (!empty($datos_user)) :
                 </div>
             </div>
             <div class="info-botones">
-                <button type="submit" class="button is-link px-6 title is-6 js-modal-trigger" data-target="modal_update_perfil"><img src="./images/user_detail.png" class="mr-2">Editar Perfil</button>
-                <button type="submit" class="button is-danger is-outlined px-5 title is-6 js-modal-trigger" data-target="modal_del_perfil">Eliminar</button>
+                <button type="submit" class="button button-editar" data-target="modal_update_perfil"><img src="./images/iconos/editar-icon.svg" class="icon">Editar Perfil</button>
+                <button type="submit" class="button button-eliminar" data-target="modal_del_perfil">Eliminar</button>
             </div>
         </div>
 
@@ -98,7 +98,7 @@ if (!empty($datos_user)) :
             <div class="modal-background"></div>
             <div class="modal-card" id="modal-card">
                 <header class="modal-card-head">
-                    <p class="modal-card-title">Editar Perfil</p>
+                    <h3 class="modal-card-title">Editar Perfil</h3>
                     <button class="delete" aria-label="close"></button>
                 </header>
                 <section class="modal-card-body">
@@ -120,7 +120,7 @@ if (!empty($datos_user)) :
 
                             <div class="column">
                                 <div class="control">
-                                    <label class="label">Documento de Identidad</label>
+                                    <label class="label">N° Documento</label>
                                     <input class="input" type="text" name="documento" pattern="[0-9]{3,20}" value="<?= $datos['documento_usuario']; ?>">
                                 </div>
                             </div>
@@ -195,23 +195,23 @@ if (!empty($datos_user)) :
             <div class="modal-background"></div>
             <div class="modal-card">
                 <header class="modal-card-head">
-                    <p class="modal-card-title">Eliminar Usuario</p>
+                    <h3 class="modal-card-title">Eliminar Usuario</h3>
                     <button class="delete" aria-label="close"></button>
                 </header>
                 <section class="modal-card-body">
                     <!-- Contenido del modal-->
 
-                    <div class="mb-4">
-                        <strong class="has-text-danger">Advertencia!</strong>¿Estas seguro de eliminar este usuario?, se elimanara de forma permanente!
+                    <div class="modal-advertencia">
+                        <strong class="has-text-danger">Advertencia!</strong> El usuario con la cuenta se elimanaran de forma permanente!
                     </div>
                     <form action="./php/delete_user.php" class="box-modal" method="POST" autocomplete="off" id="form_delete">
-                        <div class="mb-3">
+                        <div class="columns">
                             <label for="usuario_del" class="label">Usuario:</label>
                             <input type="text" class="input" value="<?= $datos['usuario_usuario']; ?>" disabled>
                             <input type="hidden" name="usuario_del" value="<?= $datos['usuario_usuario']; ?>">
                         </div>
 
-                        <div class="mb-3">
+                        <div class="columns">
                             <label for="confir_clave" class="label">Confirmar Contraseña</label>
                             <input type="password" name="confirm_clave" class="input" id="confirm_pass" disabled>
                         </div>
@@ -224,10 +224,10 @@ if (!empty($datos_user)) :
                             <button type="submit" class="button is-danger title is-6"><img src="./images/delete.png" class="mr-1">Eliminar</button>
                         </footer>
                     </form>
-            <!-- se acaba el contenido del modal -->
-            </section>
+                    <!-- se acaba el contenido del modal -->
+                </section>
+            </div>
         </div>
-    </div>
 </div>
         <!-- SE ACABA LA SECCION DEL MODAL -->
 

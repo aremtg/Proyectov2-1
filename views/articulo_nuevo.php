@@ -33,19 +33,17 @@
     
 
 
-<form action="./php/guardar_articulo.php" class="box" autocomplete="off" method="POST">
+<form action="./php/guardar_articulo.php" class="box-articulo-nuevo" autocomplete="off" method="POST">
 
     <div class="columns">
-        
-        
-        <div class="column">
+        <div class="columns">
             <div class="control">
                 <label class="label">Nombre Articulo:</label>
                 <input class="input" type="text" name="articulo" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,40}" placeholder="Define tu articulo">
             </div>
             <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'articulo'):"" ?>
         </div>
-        <div class="column">
+        <div class="columns">
             <div class="control">
                 <label class="label">Nombre Articulo 2:</label>
                 <input class="input" type="text" name="articulo2" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,40}" placeholder="Define tu articulo">

@@ -4,7 +4,7 @@
     src: url(Blanka-Regular.otf);
 }
 :root {
-    --fondo-tema:white;
+    --fondo-tema:rgb(255, 255, 255);
     --fondo-nav: #7209b7ff;
     --modo-noche:#0b0014ff;
     --login-registro: rgba(255, 255, 255, 0.61);
@@ -110,7 +110,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-a img{
+a img, .icon{
     width: 27px;    
     flex-direction: column;
 }
@@ -296,9 +296,14 @@ gap: .5rem;
     border-radius: 50%;
     border: 3.5px solid var(--fondo-tema);
 }
-.modal-info-perfil .columns .column .control h1{
-    font-size: 20px;
-    color: #7e7e7e;
+.modal-info-perfil .columns{
+    background-color: rgb(241, 241, 241);
+    border-radius: 5px;
+    padding: 4px;
+}
+.modal-info-perfil .columns .column .control h3{
+    font-size: 18px;
+    color: #000000;
 }
 .modal-info-perfil .info-botones{
     display: flex;
@@ -306,7 +311,7 @@ gap: .5rem;
     justify-content: center;
     gap: .5rem;
 }
-.modal-info-perfil .button{
+.modal-info-perfil .info-botones .button{
     color: #090909;
     padding: 4px;
     font-size: 14px;
@@ -317,10 +322,12 @@ gap: .5rem;
     display:flex ;
     align-items: center;
     justify-content:center ;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
     cursor: pointer;
+    gap: .5rem;
+}
+.modal-info-perfil .info-botones .button-eliminar{
+    background-color: rgba(255, 0, 0, 0.198);
+    padding: 9px;
 }
 /* Estilos del modal */
 .modal {
@@ -332,7 +339,6 @@ gap: .5rem;
     bottom: 0;
     z-index: 40;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.5);
     transition: opacity 0.3s ease;
   }
   
@@ -344,19 +350,23 @@ gap: .5rem;
   
   /* Estilos de la tarjeta del modal */
   .modal-card {
-    width: 90%;
+    width: max-content;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
-    background: var(--fondo-tema);
+    overflow: hidden;
+    background-color: var(--fondo-tema);
     box-shadow: var(--sombra-cajas);
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: .5rem;
     z-index: 41;
   }
-  
+  .modal-card-body {
+    width: 100%;
+    border-radius: 5px;
+}
   /* Estilos de la cabecera del modal */
   .modal-card-head {
     background-color: #f0f0f0;
@@ -366,26 +376,17 @@ gap: .5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 1rem;
   }
-  
   .modal-card-title {
-    color: #363636;
+    color:var(--color-logo);
     font-size: 1.5rem;
     line-height: 1.2;
     margin: 0;
   }
-  /* Estilos del botón de cierre del modal */
-  .modal-close {
-    cursor: pointer;
-    color: #a0a0a0;
-    font-size: 1.2rem;
-    transition: color 0.2s ease;
+  .modal-advertencia{
+    background-color: hsla(0, 100%, 50%, 0.161);
   }
-  
-  .modal-close:hover {
-    color: #363636;
-  }
-  
   /* Estilos para el fondo transparente del modal */
   .modal-background {
     position: fixed;
@@ -393,10 +394,8 @@ gap: .5rem;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #c3c0c0dc;
+    background-color: #0e0e0edc;
   }
-  
-  
 .delete{
     user-select: none;
     background-color: rgba(10,10,10,.2);
@@ -442,30 +441,32 @@ gap: .5rem;
     transform: translateX(-50%) translateY(-50%) rotate(45deg);
     transform-origin: center center;
 }
-.modal-card-body {
+.box-modal, .box-articulo-nuevo, .box-aprendiz-nuevo{
     width: 100%;
-    background-color: #fff;
-}
-.box-modal{
-    width: 100% ;
-    padding: 10px;
-    border-radius: 50px;
-    background: var(--login-registro);
-    box-shadow: var(--sombra-cajas);
+    padding: 5px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    flex-direction: column;
+    gap: .5rem;
 }
-.box input{
-    width: 85%;
+.box-articulo-nuevo{
+    justify-content: center;
+}
+.box-modal .columns, .box-articulo-nuevo .columns{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.box-modal .columns .column .control input,.box-modal .columns input, .box-articulo-nuevo .columns input{
     font-size: 16px;
     border: none;
     outline: none;
     border-radius: 7px;
     padding: 6px 7px;
-    background-color: var(--color-inputs);
+    background-color: rgb(230, 230, 230);
+}
+.box-modal .columns input{
+    width: max-content;
 }
 /* ----------- */
 .ul-mini-nav{

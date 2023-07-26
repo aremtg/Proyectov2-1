@@ -31,7 +31,7 @@
     <?php endif; ?>
     
 
-<form action="./php/guardar_aprendiz.php" class="box" autocomplete="off" id="form_aprendiz"  method="POST">
+<form action="./php/guardar_aprendiz.php" class="box-aprendiz-nuevo" autocomplete="off" id="form_aprendiz"  method="POST">
 
     <div class="columns">
         <div class="column">
