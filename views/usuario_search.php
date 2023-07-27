@@ -55,7 +55,7 @@
                 <input type="hidden" name="modulo_buscador" value="usuario"> 
                 <input type="hidden" name="eliminar_buscador" value="usuario">
                 <p>Estas buscando: <strong><?php echo $_SESSION['busqueda_usuario']; ?> </strong></p>
-                <button type="submit" class="button is-danger mt-3">Eliminar busqueda</button>
+                <button type="submit" class="button button-eliminar">Eliminar busqueda</button>
             </form>
             <?php BorrarErrores(); ?>
     <?php 

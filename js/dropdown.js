@@ -72,7 +72,7 @@ ocultarBtn.addEventListener("click", () => {
 
 const alerta = document.querySelector(".alerta");
 
-alerta.innerHTML =  `<div class="message is-danger">
+alerta.innerHTML =  `<div class="message">
 <div class="message-header">
     <p>Error al iniciar sesion</p>
 </div>
@@ -80,4 +80,3 @@ alerta.innerHTML =  `<div class="message is-danger">
 <strong>Usuario</strong> no encontrado o no cumple con los parametros!
 </div>
 </div>`;
-alerta.style = `position:absolute;`

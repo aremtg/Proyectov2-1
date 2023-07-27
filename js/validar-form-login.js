@@ -13,10 +13,10 @@ $(document).ready(function(){
         },
         messages:{
             login_usuario:{
-                required:"*Este campo es obligatorio."
+                required:"Este campo es obligatorio."
             },
             login_clave:{
-                required:"*Este campo es obligatorio."
+                required:"Este campo es obligatorio."
             }
         }
     });

@@ -1,9 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Functions to open and close a modal
     function openModal($el) {
-    const contenedor_conten = document.querySelector('.contenedor_derecha');
     $el.classList.add('is-active');
-    contenedor_conten.classList.toggle("adaptar-contenedor-cont");
     }
 // agregar estilos a l contenedor cont 
     function closeModal($el) {

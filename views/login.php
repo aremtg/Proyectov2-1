@@ -11,11 +11,11 @@
 <body>
 
         <?php if(isset($_SESSION['errorPassword'])): ?>
-            <div class='message is-danger'>
+            <div class='message'>
                 <?= $_SESSION['errorPassword'];?>
             </div>
         <?php elseif (isset($_SESSION['usuarioNoExiste'])):?>
-            <div class='message is-danger'>
+            <div class='message'>
                 <?= $_SESSION['usuarioNoExiste'];?>
             </div>
         <?php endif;  ?>

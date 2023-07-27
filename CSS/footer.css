@@ -22,29 +22,16 @@
 
     --fondo-footer:rgba(153, 153, 153, 0.76);
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    box-sizing: inherit;
-}
-body{
-    width: 100%;
-    height: 100vh;
-    font-family: 'Poppins', sans-serif;
-    background: var(--fondo-tema);
-}
 footer{
     width: 100%;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    align-self: flex-end;
+    nav-index: 3;
     bottom: 0;
-    margin-bottom: 0;
-    background-color: aliceblue;
-    gap: 2rem;
+    background-color: #f0f0f0;
+    padding: 10px;
 }
 .ssaci-cont{
     color: var(--color-logo);

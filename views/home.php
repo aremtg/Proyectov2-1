@@ -1,7 +1,7 @@
     <article class="panel-heading"> 
-    <h3 class=" is-size-2" ><span class="ssaci-cont">SSACI</span> para el SENA</h3>
+    <h3 class=" is-size-2" ><span class="ssaci-cont">SSACI</span></h3>
             <p class="is-size-6 ">
-                Sistema de Seguimiento y Control de Ingreso...
+                Sistema de Seguimiento Acceso y Control de Ingreso...
             </p>     
     </article>
         <?php

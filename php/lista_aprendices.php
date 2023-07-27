@@ -49,19 +49,19 @@
     $Npaginas = ceil($total/$registros);
 
     $tabla.='
-        <div class="table-container">
-        <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+    
+        <table class="table">
             <thead>
-                <tr class="has-text-centered">
-                    <th class="has-text-centered">#</th>
-                    <th class="has-text-centered">Nombre Usuario</th>
-                    <th class="has-text-centered">Nombre aprendiz</th>
-                    <th class="has-text-centered">Documento</th>
-                    <th class="has-text-centered">Correo</th>
-                    <th class="has-text-centered"># Contacto</th>
-                    <th class="has-text-centered">Titulada</th>
-                    <th class="has-text-centered">Ficha titulada</th>
-                    <th class="has-text-centered">Opciones</th>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre Usuario</th>
+                    <th>Nombre aprendiz</th>
+                    <th>Documento</th>
+                    <th>Correo</th>
+                    <th># Contacto</th>
+                    <th>Titulada</th>
+                    <th>Ficha titulada</th>
+                    <th>Opciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -74,7 +74,7 @@
 
         foreach($datos as $rows){
             $tabla.='
-                <tr class="has-text-centered" >
+                <tr>
                 <td>'.$contador.'</td>
                 <td>'.$rows['nombre usuario'].'</td>
                 <td>'.$rows['Nombre Aprendiz'].'</td>
@@ -98,7 +98,7 @@
 
         if($total>=1){
             $tabla.='
-            <tr class="has-text-centered" >
+            <tr >
             <td colspan="9">
                 <a href="'.$url.'1" class="button is-link is-rounded is-small mt-4 mb-4">
                     Haga clic acá para recargar el listado
@@ -109,7 +109,7 @@
     
         }else{
             $tabla.='
-            <tr class="has-text-centered" >
+            <tr >
             <td colspan="9" class="no_hay_registros">
                 No hay registros en el sistema!
             </td>
@@ -119,7 +119,7 @@
     
     
     }
-    $tabla.=' </tbody></table></div>';
+    $tabla.=' </tbody></table>';
 
     
 

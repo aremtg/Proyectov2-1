@@ -51,9 +51,9 @@ if(isset($_POST['enviar'])){
 </div> 
 <!-- TERMINA LA SECCION DEL BUSCADOR -->
 <hr>
-<table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth table_id">
+<table class="table table_id">
     <thead>
-        <tr class="has-text-centered">
+        <tr>
             <th>#</th>
             <th>Nombre Articulo 1</th>
             <th>Nombre Articulo 2</th>

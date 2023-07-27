@@ -27,9 +27,7 @@
     $Npaginas = ceil($total/$registros);
 
     $tabla.='
-        <div class="table-container">
-
-        <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+        <table class="table">
             <thead>
                 <tr class="has-text-centered">
                     <th class="has-text-centered">#</th>
@@ -86,7 +84,7 @@
     
     
     }
-    $tabla.=' </tbody></table></div>';
+    $tabla.=' </tbody></table>';
 
     
 

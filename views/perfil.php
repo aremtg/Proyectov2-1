@@ -88,8 +88,8 @@ if (!empty($datos_user)) :
                 </div>
             </div>
             <div class="info-botones">
-                <button type="submit" class="button button-editar" data-target="modal_update_perfil"><img src="./images/iconos/editar-icon.svg" class="icon">Editar Perfil</button>
-                <button type="submit" class="button button-eliminar" data-target="modal_del_perfil">Eliminar</button>
+                <button type="submit" class="button button-editar js-modal-trigger" data-target="modal_update_perfil"><img src="./images/iconos/editar-icon.svg" class="icon">Editar Perfil</button>
+                <button type="submit" class="button button-eliminar js-modal-trigger" data-target="modal_del_perfil">Eliminar</button>
             </div>
         </div>
 
@@ -221,7 +221,7 @@ if (!empty($datos_user)) :
                             <label for="delete" class="has-text-danger">Al eliminar la cuenta se borraran los aprendices registrados!</label>
                         </div>
                         <footer class="modal-card-foot">
-                            <button type="submit" class="button is-danger title is-6"><img src="./images/delete.png" class="mr-1">Eliminar</button>
+                            <button type="submit" class="button button-eliminar"><img src="./images/delete.png" class="mr-1">Eliminar</button>
                         </footer>
                     </form>
                     <!-- se acaba el contenido del modal -->
