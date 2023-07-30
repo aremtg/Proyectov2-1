@@ -88,8 +88,10 @@ if (!empty($datos_user)) :
                 </div>
             </div>
             <div class="info-botones">
-                <button type="submit" class="button button-editar js-modal-trigger" data-target="modal_update_perfil"><img src="./images/iconos/editar-icon.svg" class="icon">Editar Perfil</button>
-                <button type="submit" class="button button-eliminar js-modal-trigger" data-target="modal_del_perfil">Eliminar</button>
+                <button type="submit" class="button button-editar js-modal-trigger" data-target="modal_update_perfil">
+                    <img src="./images/iconos/editar-icon.svg" class="icon">Editar Perfil</button>
+                <button type="submit" class="button button-eliminar js-modal-trigger" data-target="modal_del_perfil">
+                    <img src="./images/iconos/basura-icon.svg" class="icon">Eliminar</button>
             </div>
         </div>
 

@@ -39,7 +39,7 @@
     
 
 
-<form action="./php/guardar_usuario.php" class="box" autocomplete="off" id="registro-for"  method="POST">
+<form action="./php/guardar_usuario.php" class="box-form" autocomplete="off" id="registro-for"  method="POST">
 
     <div class="columns">
         <div class="column">

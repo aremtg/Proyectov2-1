@@ -33,7 +33,7 @@ if(mysqli_num_rows($check)==1){
         </div>
 
         <div class="column p-0">
-            <h1 class="title is-6 m-0">No Documento </h1>
+            <h1 class="title is-6 m-0">N° Documento </h1>
             <p class="is-size-6 mt-2"><?= $datos['documento'];?></p>
         </div>
 

@@ -24,27 +24,24 @@
 <!-- SECCION PARA EL BUSCADOR CON PHP -->
 <div class="box_buscador">
     <form action="" method="POST" autocomplete="off">
-            <label for="search" class="label">Ingrese que articulo deseas buscar con PHP</label>
+            <label for="search" class="label">Buscar articulo con PHP</label>
             <input class="input mb-3" type="search" name="busqueda"> 
             <button class="button is-link" type="submit" name="enviar">Buscar</button>
     </form>
-</div>
-<hr>
-<?php $where="";
+    <?php $where="";
 
-if(isset($_POST['enviar'])){
-    $busqueda = $_POST['busqueda'];
-        if (isset($_POST['busqueda'])){
-            $where = "WHERE nombre_articulo LIKE '%".$busqueda."%'";
-        }
+    if(isset($_POST['enviar'])){
+        $busqueda = $_POST['busqueda'];
+            if (isset($_POST['busqueda'])){
+                $where = "WHERE nombre_articulo LIKE '%".$busqueda."%'";
+            }
 
-} ?>
-<!-- TERMINA LA SECCION DEL BUSCADOR -->
+    } ?>
+    <!-- TERMINA LA SECCION DEL BUSCADOR -->
 
-<!-- SECCION PARA EL BUSCADOR CON js -->
- <div class="box_buscador">
-    <form class="d-flex">
-        <label for="search" class="label">Ingrese que articulo deseas buscar con JS</label>
+    <!-- SECCION PARA EL BUSCADOR CON js -->
+    <form>
+        <label for="search" class="label">Buscar articulo con JS</label>
         <input class="light-table-filter input" data-table="table_id" type="text">
         <button class="button is-link" type="submit" name="enviar">Buscar</button>
     </form>
