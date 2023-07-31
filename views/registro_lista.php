@@ -1,13 +1,11 @@
 <article class="panel-heading mb-5"> 
 
-        <h3 class="is-size-2 pt+1">
+        <h3 class="">
         REGISTROS
         </h3>
-
-
-    <p class="is-size-6">
-        Todos los registros!
-    </p>     
+        <p class="">
+                Todos los registros!
+        </p>     
 </article>
 
 <?php if(isset($_SESSION['delete'])): ?>

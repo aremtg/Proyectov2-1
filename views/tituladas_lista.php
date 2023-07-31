@@ -1,10 +1,10 @@
 <article class="panel-heading">
 
-    <h3 class="is-size-2">
+    <h3 class="">
         TITULADAS
     </h3>
 
-    <p class="is-size-6">
+    <p class="">
         Tituladas activas!
     </p>
 

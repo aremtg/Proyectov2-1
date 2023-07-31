@@ -1,9 +1,8 @@
 <article class="panel-heading"> 
-    <h3 class="is-size-2 pt+1">
+    <h3 class="">
         USUARIOS
     </h3>
-
-    <p class="is-size-6">
+    <p class="">
         Estimado usuario, recuerde que las modificaciones realizadas en este apartado no se podran modificar despues de 24horas!
     </p>     
 

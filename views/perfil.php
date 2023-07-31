@@ -42,56 +42,58 @@ if (!empty($datos_user)) :
             <div class="info-foto-perfil">
                 <img class="img_user" src="./images/user.png" alt="Foto de perfil">
             </div>
-            <div class="columns">
-                <div class="column">
-                    <div class="control">
-                        <h3 class="title is-5">Nombres</h3>
-                        <p class="is-size-5"><?= $datos['nombre_usuario']; ?></p>
+            <div class="info-perfil">
+                <div class="columns">
+                    <div class="column">
+                        <div class="control">
+                            <h3 class="">Nombres</h3>
+                            <p class=""><?= $datos['nombre_usuario']; ?></p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="column">
-                    <div class="control">
-                        <h3 class="title is-5">Apellidos</h3>
-                        <p class="is-size-5"><?= $datos['apellido_usuario']; ?></p>
+                    <div class="column">
+                        <div class="control">
+                            <h3 class="">Apellidos</h3>
+                            <p class=""><?= $datos['apellido_usuario']; ?></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <div class="control">
-                        <h3 class="title is-5">Tipo de Documento</h3>
-                        <p class="is-size-5"><?= $datos['tipoDoc_usuario']; ?></p>
+                <div class="columns">
+                    <div class="column">
+                        <div class="control">
+                            <h3 class="">Tipo de Documento</h3>
+                            <p class=""><?= $datos['tipoDoc_usuario']; ?></p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="column">
-                    <div class="control">
-                        <h3 class="title is-5">N° Documento </h3>
-                        <p class="is-size-5"><?= $datos['documento_usuario']; ?></p>
+                    <div class="column">
+                        <div class="control">
+                            <h3 class="">N° Documento </h3>
+                            <p class=""><?= $datos['documento_usuario']; ?></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <div class="control">
-                        <h3 class="title is-5">Correo</h3>
-                        <p class="is-size-5"><?= $datos['correo_usuario']; ?></p>
+                <div class="columns">
+                    <div class="column">
+                        <div class="control">
+                            <h3 class="">Correo</h3>
+                            <p class=""><?= $datos['correo_usuario']; ?></p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="column">
-                    <div class="control">
-                        <h3 class="title is-5">Usuario</h3>
-                        <p class="is-size-5"><?= $datos['usuario_usuario']; ?></p>
+                    <div class="column">
+                        <div class="control">
+                            <h3 class="">Usuario</h3>
+                            <p class=""><?= $datos['usuario_usuario']; ?></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="info-botones">
-                <button type="submit" class="button button-editar js-modal-trigger" data-target="modal_update_perfil">
-                    <img src="./images/iconos/editar-icon.svg" class="icon">Editar Perfil</button>
-                <button type="submit" class="button button-eliminar js-modal-trigger" data-target="modal_del_perfil">
-                    <img src="./images/iconos/basura-icon.svg" class="icon">Eliminar</button>
+                <div class="box-button">
+                    <button type="submit" class="button button-editar js-modal-trigger" data-target="modal_update_perfil">
+                        <img src="./images/iconos/editar-icon.svg" class="icon">Editar Perfil</button>
+                    <button type="submit" class="button button-eliminar js-modal-trigger" data-target="modal_del_perfil">
+                        <img src="./images/iconos/basura-icon.svg" class="icon">Eliminar</button>
+                </div>
             </div>
         </div>
 
@@ -143,7 +145,7 @@ if (!empty($datos_user)) :
                             </div>
                             <div class="column">
                                 <div class="control">
-                                    <label class="label">Email</label>
+                                    <label class="label">Correo</label>
                                     <input class="input" type="email" name="email" pattern="[0-9a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,40}" value="<?= $datos['correo_usuario']; ?>">
                                 </div>
                             </div>
@@ -155,7 +157,7 @@ if (!empty($datos_user)) :
                             </div>
                         </div>
 
-                        <div class="columns">
+                        <div class="columns column-contraseñas-rol">
                             <div class="column">
                                 <div class="control">
                                     <label class="label">Contraseña</label>
@@ -178,7 +180,7 @@ if (!empty($datos_user)) :
                                     </select>
                                 </div>
                             </div>
-                            <div class="modal-card-foot">
+                            <div class="box-button">
                                 <button type="submit" class="button is-success title is-6"><img src="./images/save.png" class="mr-1"> Guardar Cambios</button>
                             </div>
                         </div>
@@ -222,7 +224,7 @@ if (!empty($datos_user)) :
                             <input type="checkbox" name="delete" id="check_confirm">
                             <label for="delete" class="has-text-danger">Al eliminar la cuenta se borraran los aprendices registrados!</label>
                         </div>
-                        <footer class="modal-card-foot">
+                        <footer class="box-button">
                             <button type="submit" class="button button-eliminar"><img src="./images/delete.png" class="mr-1">Eliminar</button>
                         </footer>
                     </form>

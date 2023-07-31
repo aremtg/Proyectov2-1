@@ -81,7 +81,7 @@ body{
     gap: 2rem;
 }
 
-.box-login .control .input-login{
+.box-login .control-login .input-login{
     width: 85%;
     font-size: 16px;
     border: none;
@@ -90,15 +90,11 @@ body{
     padding: 6px 7px;
     background-color: var(--color-inputs);
 }
-.box-login .control label img{
+.box-login .control-login label img{
     width: 25px;
     transform: translateY(9px);
 }
 .message{
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transform: translate(-1px, 80px);
+    transform: translateY(130px);
 }

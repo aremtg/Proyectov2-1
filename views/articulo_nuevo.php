@@ -1,6 +1,6 @@
 <article class="panel-heading mb-5"> 
-    <h3 class=" is-size-2 " >ARTICULOS</h3>
-    <p class="is-size-5">
+    <h3 class="" >ARTICULOS</h3>
+    <p class="">
         Articulos registrados!
     </p>     
 </article>
@@ -51,8 +51,8 @@
             <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'nombres'):"" ?>
         </div>
     </div>
-        <div class="has-text-centered my-4">
-            <button class="button is-success px-5 title is-6" type="submit" value="Registrar"><img src="./images/save.png" alt="" class="mr-2">Registrar</button>
+        <div class="box-button">
+            <button class="button" type="submit" value="Registrar"><img src="./images/save.png" alt="" class="mr-2">Registrar</button>
         </div>
 
 </form>    

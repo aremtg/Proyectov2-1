@@ -1,7 +1,7 @@
 
-<article class="panel-heading mb-5"> 
-    <h3 class=" is-size-2 " >Nuevo Aprendiz</h3>
-    <p class="is-size-5">Completa el formulario para registrar el nuevo aprendiz</p>     
+<article class="panel-heading"> 
+    <h3 class="" >Nuevo Aprendiz</h3>
+    <p class="">Completa el formulario para registrar el nuevo aprendiz</p>     
 </article>
 
     <ul class="ul-mini-nav">
@@ -36,7 +36,7 @@
     <div class="columns">
         <div class="column">
         <div class="control">
-            <label class="label">Usuario de quien registra:</label>
+            <label class="label">Quien registra:</label>
             <input class="input" type="text" name="documento" value="<?= $_SESSION['usuario']['usuario_usuario']?>" disabled>
             <input type="hidden" name="usuario" value="<?= $_SESSION['usuario']['id_usuario']?>">
         </div>
@@ -118,7 +118,7 @@
         </div>
     </div>
 
-    <div class="columns">
+    <div class="columns column-art-cod">
         <div class="column">
             <div class="control">
                 <label class="label">Articulos:</label>
@@ -145,12 +145,12 @@
         <div class="column">
             <div class="control">
                 <label class="label">Descripcion 1</label>
-                <textarea class="input" name="descripcion1"></textarea>
+                <textarea name="descripcion1"></textarea>
             </div>
             <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'descripcion1'):"" ?>
         </div>
     </div>
-    <div class="columns">
+    <div class="columns column-art-cod">
         <div class="column">
             <div class="control">
                 <label class="label">Codigo #2</label>
@@ -161,13 +161,13 @@
         <div class="column">
             <div class="control">
                 <label class="label">Descripcion 2</label>
-                <textarea class="input" name="descripcion2"></textarea>
+                <textarea  name="descripcion2"></textarea>
             </div>
             <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'descripcion2'):"" ?>
         </div>
     </div>
 
-        <div>
+        <div class="box-button">
             <button class="button" type="submit" value="Registrar"><img src="./images/save.png" alt="" class="mr-2">Registrar</button>
         </div>
 

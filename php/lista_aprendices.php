@@ -50,18 +50,18 @@
 
     $tabla.='
     
-        <table class="table">
+        <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
             <thead>
                 <tr>
-                    <th>#</th>
-                    <th>Nombre Usuario</th>
-                    <th>Nombre aprendiz</th>
-                    <th>Documento</th>
-                    <th>Correo</th>
-                    <th># Contacto</th>
-                    <th>Titulada</th>
-                    <th>Ficha titulada</th>
-                    <th>Opciones</th>
+                    <th class="has-text-centered">#</th>
+                    <th class="has-text-centered">Nombre Usuario</th>
+                    <th class="has-text-centered">Nombre aprendiz</th>
+                    <th class="has-text-centered">Documento</th>
+                    <th class="has-text-centered">Correo</th>
+                    <th class="has-text-centered"># Contacto</th>
+                    <th class="has-text-centered">Titulada</th>
+                    <th class="has-text-centered">Ficha titulada</th>
+                    <th class="has-text-centered">Opciones</th>
                 </tr>
             </thead>
             <tbody>

@@ -1,7 +1,7 @@
 <?php require_once('./php/conexion.php'); ?>
 <article class="panel-heading mb-5"> 
-    <h3 class=" is-size-2 " >ARTICULOS</h3>
-    <p class="is-size-5">
+    <h3 class="" >ARTICULOS</h3>
+    <p class="">
         Articulos registrados!
     </p>     
 </article>
@@ -25,7 +25,7 @@
 <div class="box_buscador">
     <form action="" method="POST" autocomplete="off">
             <label for="search" class="label">Buscar articulo con PHP</label>
-            <input class="input mb-3" type="search" name="busqueda"> 
+            <input class="input" type="search" name="busqueda"> 
             <button class="button is-link" type="submit" name="enviar">Buscar</button>
     </form>
     <?php $where="";
@@ -48,12 +48,12 @@
 </div> 
 <!-- TERMINA LA SECCION DEL BUSCADOR -->
 <hr>
-<table class="table table_id">
+<table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth table_id">
     <thead>
         <tr>
-            <th>#</th>
-            <th>Nombre Articulo 1</th>
-            <th>Nombre Articulo 2</th>
+            <th class="has-text-centered">#</th>
+            <th class="has-text-centered">Nombre Articulo 1</th>
+            <th class="has-text-centered">Nombre Articulo 2</th>
         </tr>
     </thead>
     <tbody>

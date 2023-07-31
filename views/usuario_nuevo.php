@@ -56,7 +56,7 @@
         
         <div class="column">
             <div class="control">
-                <label class="label">Documento de Identidad</label>
+                <label class="label">N° Documento</label>
                 <input class="input" type="text" name="documento" pattern="[0-9]{3,20}" placeholder="Ingresa tu numero de documento">
             </div>
             <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'documento'):"" ?>
@@ -80,7 +80,7 @@
             </div>
             <div class="column">
                 <div class="control">
-                    <label class="label">Email</label>
+                    <label class="label">Correo</label>
                     <input class="input" type="email" name="email" pattern="[0-9a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,40}" placeholder="Ingresa tu correo">
                 </div>
                 <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'correo'):"" ?>

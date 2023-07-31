@@ -1,6 +1,6 @@
     <article class="panel-heading"> 
-    <h3 class=" is-size-2" ><span class="ssaci-cont">SSACI</span></h3>
-            <p class="is-size-6 ">
+    <h3 class="" ><span class="ssaci-cont">SSACI</span></h3>
+            <p class="">
                 Sistema de Seguimiento Acceso y Control de Ingreso...
             </p>     
     </article>
@@ -14,34 +14,34 @@
 
 <div class="panel_iconos"><!--Abrimos un contenedor para los botones de navegacion-->
     <a href="index.php?vista=usuarios_lista" class="iconos">
-        <h2 class="title is-5">USUARIOS</h2>
-        <p class="is-size-5 pb-4"><?= $totalUsuarios; ?> Registrados</p>
+        <h2 class="">USUARIOS</h2>
+        <p class=""><?= $totalUsuarios; ?> Registrados</p>
     </a>
     <a href="index.php?vista=aprendices_lista" class="iconos">
-        <h2 class="titulo_productos title is-5">APRENDICES</h2>
-        <p class="is-size-5"><?= $totalAprendiz; ?> Registrados</p>
+        <h2 class="titulo_productos">APRENDICES</h2>
+        <p class=""><?= $totalAprendiz; ?> Registrados</p>
     </a>
 
     <a href="index.php?vista=tituladas_lista" class="iconos">
-        <h2 class="titulo_productos title is-5">TITULADAS</h2>
-        <p class="is-size-5"><?= $totaltitulada; ?> Registrados</p>
+        <h2 class="titulo_productos">TITULADAS</h2>
+        <p class=""><?= $totaltitulada; ?> Registrados</p>
     </a>
 
     <a href="index.php?vista=articulos" class="iconos">
-        <h2 class="titulo_productos title is-5">ARTICULOS</h2>
-        <p class="is-size-5"><?= $totalarticulo; ?> Registrados</p>
+        <h2 class="titulo_productos">ARTICULOS</h2>
+        <p class=""><?= $totalarticulo; ?> Registrados</p>
     </a>
 
     <a href="index.php?vista=articulos" class="iconos">
-        <h2 class="titulo_productos title is-5">REGISTROS</h2>
-        <p class="is-size-5"><?= $totalRegistro; ?> Registrados</p>
+        <h2 class="titulo_productos">REGISTROS</h2>
+        <p class=""><?= $totalRegistro; ?> Registrados</p>
     </a>
     
 </div><!--cerramos contenedor para los botones de navegacion-->
 
 <div class="a_iniciar_aplicacion">
     <img class="img_guardia" src="./images/guardia-home.svg" alt="">
-    <a href="./views/aplicacion.php" target="_blank" class="button is-primary is-medium title is-4">Iniciar Aplicación</a>
+    <a href="./views/aplicacion.php" target="_blank" class="">Iniciar Aplicación</a>
 </div>
 
 <div class="texto">

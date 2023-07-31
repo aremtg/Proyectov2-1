@@ -44,5 +44,5 @@
             <span class="tiptext">Salir</span>
         </a>
     </div>
-    <div class="contenedor_derecha pl-5"><!--Abrimos un contenedor para la parte de la derecha-->
+    <div class="contenedor_derecha"><!--Abrimos un contenedor para la parte de la derecha-->
        

@@ -1,9 +1,9 @@
     <article class="panel-heading"> 
 
-        <h3 class="is-size-2">
+        <h3 class="">
         APRENDICES
         </h3>
-        <p class="is-size-6">
+        <p class="">
             Aprendices Activos!
         </p>     
 
