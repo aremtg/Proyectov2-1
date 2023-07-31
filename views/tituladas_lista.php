@@ -44,26 +44,26 @@
         </a>
     </li>
 </ul>
-
-<?php
-if (!isset($_GET['page'])) {
-    $pagina = 1;
-} else {
-    $pagina = (int)$_GET['page'];
-
-    if ($pagina <= 1) {
+<div class="scroll-tabla">
+    <?php
+    if (!isset($_GET['page'])) {
         $pagina = 1;
+    } else {
+        $pagina = (int)$_GET['page'];
+
+        if ($pagina <= 1) {
+            $pagina = 1;
+        }
     }
-}
 
-$pagina = limpiar_cadena($pagina);
-$url = "index.php?vista=tituladas_lista&page=";  //esta variable va a contener la url completa del sistema de la tabla
-$registros = 10;                               // esta va a mostrar el numero total de registrados en cada pagina
-$busqueda = "";                                //esta variable se va a usar para realizar la busqueda
+    $pagina = limpiar_cadena($pagina);
+    $url = "index.php?vista=tituladas_lista&page=";  //esta variable va a contener la url completa del sistema de la tabla
+    $registros = 10;                               // esta va a mostrar el numero total de registrados en cada pagina
+    $busqueda = "";                                //esta variable se va a usar para realizar la busqueda
 
-require('./php/lista_tituladas.php');
-?>
-
+    require('./php/lista_tituladas.php');
+    ?>
+</div>
 
 <!-- ####### ESTE ES EL MODAL PARA AGREGAR TITULADAS VA UNIDO AL BOTON AGREGAR EN LA LINEA 17 ####### -->
 <div class="modal" id="modal_agg_titulada">

@@ -27,7 +27,7 @@
             </a>
         </li>
     </ul>
-
+<div class="scroll-tabla">
 <?php 
     if(!isset($_GET['page'])){
         $pagina = 1;
@@ -47,3 +47,4 @@
     require('./php/lista_user.php');
 ?>
 
+</div>

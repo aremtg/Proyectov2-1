@@ -109,7 +109,7 @@ if (!empty($datos_user)) :
                     <!-- Contenido del modal-->
                     <form action="./php/update_perfil.php" class="box-modal" autocomplete="off" id="perfil_up_form" method="POST">
 
-                        <div class="columns">
+                        <div class="columns-con-dos-column">
                             <div class="column">
                                 <label for="tipoDoc" class="label">Tipo de Documento</label>
                                 <div class="control select">
@@ -128,34 +128,36 @@ if (!empty($datos_user)) :
                                     <input class="input" type="text" name="documento" pattern="[0-9]{3,20}" value="<?= $datos['documento_usuario']; ?>">
                                 </div>
                             </div>
-                            <div class="column">
-                                <div class="control">
-                                    <label class="label">Nombres</label>
-                                    <input class="input" type="text" name="nombres" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,40}" value="<?= $datos['nombre_usuario']; ?>">
-                                </div>
-                            </div>
                         </div>
 
-                        <div class="columns">
+                        <div class="columns-con-dos-column">
+                            <div class="column">
+                                    <div class="control">
+                                        <label class="label">Nombres</label>
+                                        <input class="input" type="text" name="nombres" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,40}" value="<?= $datos['nombre_usuario']; ?>">
+                                    </div>
+                            </div>
                             <div class="column">
                                 <div class="control">
                                     <label class="label">Apellidos</label>
                                     <input class="input" type="text" name="apellidos" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,40}" value="<?= $datos['apellido_usuario']; ?>">
                                 </div>
                             </div>
-                            <div class="column">
-                                <div class="control">
-                                    <label class="label">Correo</label>
-                                    <input class="input" type="email" name="email" pattern="[0-9a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,40}" value="<?= $datos['correo_usuario']; ?>">
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="control">
-                                    <label class="label">Usuario</label>
-                                    <input class="input" type="text" name="usuario" pattern="[0-9a-zA-ZáéíóúÁÉÍÓÚñÑ ]{6,40}" value="<?= $datos['usuario_usuario']; ?>" disabled>
-                                </div>
-                            </div>
                         </div>
+                        <div class="columns-con-dos-column">
+                            <div class="column">
+                                    <div class="control">
+                                        <label class="label">Correo</label>
+                                        <input class="input" type="email" name="email" pattern="[0-9a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,40}" value="<?= $datos['correo_usuario']; ?>">
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="control">
+                                        <label class="label">Usuario</label>
+                                        <input class="input" type="text" name="usuario" pattern="[0-9a-zA-ZáéíóúÁÉÍÓÚñÑ ]{6,40}" value="<?= $datos['usuario_usuario']; ?>" disabled>
+                                    </div>
+                                </div>
+                        </div>       
 
                         <div class="columns column-contraseñas-rol">
                             <div class="column">
@@ -170,6 +172,8 @@ if (!empty($datos_user)) :
                                     <input class="input" type="password" name="clave_new" pattern="[0-9a-zA-ZáéíóúÁÉÍÓÚñÑ ]{6,80}" id="clave_cambiada" disabled>
                                 </div>
                             </div>
+                            
+                            
                             <div class="column">
                                 <label for="rol" class="label">Rol</label>
                                 <div class="control select ">
@@ -181,7 +185,7 @@ if (!empty($datos_user)) :
                                 </div>
                             </div>
                             <div class="box-button">
-                                <button type="submit" class="button is-success title is-6"><img src="./images/save.png" class="mr-1"> Guardar Cambios</button>
+                                <button type="submit" class="button"><img src="./images/save.png" class="mr-1"> Guardar Cambios</button>
                             </div>
                         </div>
                     </form>
