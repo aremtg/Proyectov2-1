@@ -46,7 +46,7 @@
         </div>
 
     <div class="div-botones">    
-        <a href="registro-aprendiz.php" class="btn_registro-aprendiz">
+        <a href="#" class="btn_registro-aprendiz">
             <input type="image" src="../imagenes/registro-icon.svg" id="registro-aprendiz" alt="">
             <label for="registro-aprendiz">Registrar aprendiz</label>
         </a>
