@@ -1,8 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=Rock+Salt&display=swap');
-@font-face{
-    font-family: 'blanka';
-    src: url(Blanka-Regular.otf);
-}
 :root {
     --fondo-tema:white;
     --fondo-nav: #7209b7ff;
@@ -31,7 +26,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Poppins', sans-serif;
 }
 form{
     width: 340px;

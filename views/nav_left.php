@@ -28,10 +28,14 @@
                 <img src="images/iconos/registro-icon.svg" alt="">
                 <span class="tiptext">Usuarios</span>
             </a>
+            <a class="nav_a" href="index.php?vista=papel_permisos">
+                <img src="images/iconos/registro-icon.svg" alt="">
+                <span class="tiptext">Permisos</span>
+            </a>
         </nav>
         <div class="py-6 cont_user"><!--se abre un contenedor para agregar una imagen y unos titulos-->
             <div class="nombre_rol">
-                <h3 class="user-nombre"> <?= $_SESSION['usuario']['usuario_usuario']; ?> </h3>
+                <h3 class="user-nombre"> <?= $_SESSION['usuario']['usuario_usuario'];?> </h3>
                 <h4 class="user-rol"><?= $_SESSION['usuario']['rol_usuario']; ?></h4>
             </div>
             <a class="user_a" href="index.php?vista=perfil">

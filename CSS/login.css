@@ -11,11 +11,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Poppins', sans-serif;
 }
 .alerta{
     width: 400px;
-    background-color: #8f5ad0;
+    background-color: var(--color-logo);
 }
 .box-login{
     width: 340px;
@@ -42,7 +41,7 @@ body{
 .logos-login .saci {
     color: var(--color-logo);
     font-size: 35px;
-    font-family: 'blanka';
+    font-family: 'Work Sans', sans-serif;
     font-weight: 800;
     padding-bottom: 15px;
 }

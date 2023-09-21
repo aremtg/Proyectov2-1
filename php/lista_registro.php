@@ -31,6 +31,7 @@
     $Npaginas = ceil($total/$registros);
 
     $tabla.='
+        <div class="table-container">
         <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
             <thead>
                 <tr class="has-text-centered">
@@ -57,7 +58,7 @@
 
         foreach($datos as $rows){
             $tabla.='
-                <tr>
+                <tr class="has-text-centered" >
                 <td>'.$contador.'</td>
                 <td>'.$rows['nombre completo'].'</td>
                 <td>'.$rows['nombre_articulo'].'</td>
@@ -69,7 +70,7 @@
                 <td>'.$rows['fecha_registro'].'</td>
                 <td>'.$rows['hora_registro'].'</td>
                 <td>
-                    <a href="./php/delete.php?id='.$rows['id_registro'].'" class="button button-eliminar">Eliminar</a>
+                    <a href="./php/delete.php?id='.$rows['id_registro'].'" class="button is-danger is-rounded is-small">Eliminar</a>
                 </td>
                 </tr>
             ';
@@ -82,9 +83,9 @@
 
         if($total>=1){
             $tabla.='
-            <tr>
+            <tr class="has-text-centered" >
             <td colspan="9">
-                <a href="'.$url.'1" class="button">
+                <a href="'.$url.'1" class="button is-link is-rounded is-small mt-4 mb-4">
                     Haga clic acá para recargar el listado
                 </a>
             </td>
@@ -93,8 +94,8 @@
     
         }else{
             $tabla.='
-            <tr>
-            <td colspan="12"  class="no_hay_registros">
+            <tr class="has-text-centered" >
+            <td colspan="12">
                 No hay registros en el sistema!
             </td>
             </tr>
@@ -104,13 +105,13 @@
     
     }
     mysqli_close($db);
-    $tabla.=' </tbody></table>';
+    $tabla.=' </tbody></table></div>';
 
     
 
     if($total>=1 && $pagina <= $Npaginas){
         $tabla.='
-        <p>Mostrando usuarios <strong>'.$pag_inicio.'</strong> al <strong>'.$pag_final.'</strong> de un <strong>total de '.$total.'</strong></p>
+        <p class="has-text-right">Mostrando usuarios <strong>'.$pag_inicio.'</strong> al <strong>'.$pag_final.'</strong> de un <strong>total de '.$total.'</strong></p>
         ';
     }
 

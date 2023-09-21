@@ -25,6 +25,7 @@
     $Npaginas = ceil($total/$registros);
 
     $tabla.='
+        <div class="table-container">
         <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
             <thead>
                 <tr class="has-text-centered">
@@ -81,14 +82,14 @@
         }else{
             $tabla.='
             <tr class="has-text-centered" >
-            <td colspan="7"  class="no_hay_registros">
+            <td colspan="7">
                 No hay registros en el sistema!
             </td>
             </tr>
             ';
         }
     }
-    $tabla.=' </tbody></table>';
+    $tabla.=' </tbody></table></div>';
 
     if($total>=1 && $pagina <= $Npaginas){
         $tabla.='

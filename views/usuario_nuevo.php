@@ -1,11 +1,16 @@
 <article class="panel-heading mb-5"> 
-        <h3 class=" is-size-2 " >Nuevo usuario</h3>
+    <div class="is-flex">
+            <h3>
+                Nuevo usuario
+            </h3>
+    </div>
         <p class="is-size-5">
             Completa el formulario para registrar el nuevo usuario
         </p>     
 </article>
 
-    <ul class="ul-mini-nav">
+<div class="tabs is-centered is-boxed">
+    <ul>
         <li class="is-active">
             <a href="index.php?vista=usuario_nuevo">
                 <span>AGREGAR</span>
@@ -24,6 +29,7 @@
             </a>
         </li>
     </ul>
+</div>
 
     <?php if(isset($_SESSION['registrado'] )): ?>
 
@@ -39,7 +45,7 @@
     
 
 
-<form action="./php/guardar_usuario.php" class="box-form" autocomplete="off" id="registro-for"  method="POST">
+<form action="./php/guardar_usuario.php" class="box" autocomplete="off" id="registro-for"  method="POST">
 
     <div class="columns">
         <div class="column">
@@ -56,7 +62,7 @@
         
         <div class="column">
             <div class="control">
-                <label class="label">N° Documento</label>
+                <label class="label">Documento de Identidad</label>
                 <input class="input" type="text" name="documento" pattern="[0-9]{3,20}" placeholder="Ingresa tu numero de documento">
             </div>
             <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'documento'):"" ?>
@@ -80,7 +86,7 @@
             </div>
             <div class="column">
                 <div class="control">
-                    <label class="label">Correo</label>
+                    <label class="label">Email</label>
                     <input class="input" type="email" name="email" pattern="[0-9a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,40}" placeholder="Ingresa tu correo">
                 </div>
                 <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'correo'):"" ?>

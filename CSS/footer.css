@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=Rock+Salt&display=swap');
-@font-face{
-    font-family: 'blanka';
-    src: url(Blanka-Regular.otf);
-}
+
 :root {
     --fondo-tema:rgb(255, 255, 255);
     --fondo-nav: #7209b7ff;

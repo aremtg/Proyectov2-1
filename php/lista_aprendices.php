@@ -49,10 +49,10 @@
     $Npaginas = ceil($total/$registros);
 
     $tabla.='
-    
+        <div class="table-container">
         <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
             <thead>
-                <tr>
+                <tr class="has-text-centered">
                     <th class="has-text-centered">#</th>
                     <th class="has-text-centered">Nombre Usuario</th>
                     <th class="has-text-centered">Nombre aprendiz</th>
@@ -74,7 +74,7 @@
 
         foreach($datos as $rows){
             $tabla.='
-                <tr>
+                <tr class="has-text-centered" >
                 <td>'.$contador.'</td>
                 <td>'.$rows['nombre usuario'].'</td>
                 <td>'.$rows['Nombre Aprendiz'].'</td>
@@ -98,7 +98,7 @@
 
         if($total>=1){
             $tabla.='
-            <tr >
+            <tr class="has-text-centered" >
             <td colspan="9">
                 <a href="'.$url.'1" class="button is-link is-rounded is-small mt-4 mb-4">
                     Haga clic acá para recargar el listado
@@ -109,8 +109,8 @@
     
         }else{
             $tabla.='
-            <tr >
-            <td colspan="9" class="no_hay_registros">
+            <tr class="has-text-centered" >
+            <td colspan="9">
                 No hay registros en el sistema!
             </td>
             </tr>
@@ -119,7 +119,7 @@
     
     
     }
-    $tabla.=' </tbody></table>';
+    $tabla.=' </tbody></table></div>';
 
     
 

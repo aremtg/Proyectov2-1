@@ -55,15 +55,15 @@ function renombrar_fotos($nombre){
 
 #funcion paginador de tablas#cap 14
 function paginador_tablas($pagina,$Npaginas,$url,$botones){
-	$tabla ='<nav class="pagination" role="navigation" aria-label="pagination">';
+	$tabla ='<nav class="pagination is-centered is-rounded" role="navigation" aria-label="pagination">';
 
 	//FUNCION PARA EL BOTON ANTERIOR
 	if($pagina <= 1){
-		$tabla.='<a class="pagination-previous pagination_a is-disabled" disabled><img src="images/iconos/previous-icon.svg" alt=""></a>
+		$tabla.='<a class="pagination-previous is-disabled" disabled>Anterior</a>
 		<ul class="pagination-list">
 		';
 	}else{
-		$tabla.='<a class="pagination-previous" pagination_a href="'.$url.($pagina-1).'"><img src="images/iconos/previous-icon.svg" alt=""></a>
+		$tabla.='<a class="pagination-previous" href="'.$url.($pagina-1).'">Anterior</a>
 		<ul class="pagination-list">
 		<li><a class="pagination-link" href="'.$url.'1">1</a></li>
 		<li><span class="pagination-ellipsis">&hellip;</span></li>
@@ -91,7 +91,7 @@ function paginador_tablas($pagina,$Npaginas,$url,$botones){
 	if($pagina == $Npaginas ){
 		$tabla.='
 		</ul>
-		<a class="pagination-next pagination_a is-disabled" disabled><img src="images/iconos/next-icon.svg" alt=""></a>
+		<a class="pagination-next is-disabled" disabled>Siguiente</a>
 		<ul class="pagination-list">
 		';
 	}else{
@@ -99,7 +99,7 @@ function paginador_tablas($pagina,$Npaginas,$url,$botones){
 		<li><span class="pagination-ellipsis">&hellip;</span></li>
 		<li><a class="pagination-link" href="'.$url.$Npaginas.'">'.$Npaginas.'</a></li>
 		</ul>
-		<a class="pagination-next pagination_a is-disabled" disabled href="'.$url.($pagina+1).'"><img src="images/iconos/next-icon.svg" alt=""></a>
+		<a class="pagination-next is-disabled" disabled href="'.$url.($pagina+1).'">Siguiente</a>
 		';
 	}
 
