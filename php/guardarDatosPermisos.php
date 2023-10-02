@@ -24,12 +24,27 @@ if (empty($errores)) {
     // Construir la consulta SQL de inserción
     $consulta = "INSERT INTO datos_permisos (id, nombre_instructor, nombre_aprendiz, ficha, titulada, ambiente) VALUES (null, '$nombreInstructor', '$nombreAprendiz', '$ficha', '$titulada', '$ambiente')";
 
-    // Ejecutar la consulta SQL
-    if (mysqli_query($db, $consulta)) {
-        echo "Los datos de permisos se han guardado correctamente.";
-    } else {
-        echo "Error al guardar los datos: " . mysqli_error($db);
+    if($mysqli_query($db, $consulta)){
+        $_SESSION['datos_permisos'] = "
+            <div class='message-header title is-5 m-0'>
+                <p>Registro exitoso!</p>
+            </div>
+            <div class='message-body is-size-6'>
+                El usuario <strong>$nombreInstructor </strong>  ha sido registrado correctamente.
+            </div>";
+
+    }else{
+        $_SESSION['error-datos_permisos'] = "
+        <div class='message is-danger title is-5 m-0'>
+            <div class='message-header'>
+                <p>Error de Registro!</p>
+            </div>
+            <div class='message-body is-size-6'>
+                El <strong>Usuario </strong> no se ha podido registrar comuniquese con soporte.
+            </div>
+            </div>";
     }
+
 }
 
 mysqli_close($db);
