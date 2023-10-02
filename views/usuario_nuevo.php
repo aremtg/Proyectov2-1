@@ -1,12 +1,10 @@
-<article class="panel-heading mb-5"> 
-    <div class="is-flex">
-            <h3>
-                Nuevo usuario
-            </h3>
-    </div>
-        <p class="is-size-5">
-            Completa el formulario para registrar el nuevo usuario
-        </p>     
+<article class="panel-heading"> 
+    <h3>
+        Nuevo usuario
+    </h3>
+    <p class="">
+        Completa el formulario para registrar el nuevo usuario
+    </p>     
 </article>
 
 <div class="tabs is-centered is-boxed">

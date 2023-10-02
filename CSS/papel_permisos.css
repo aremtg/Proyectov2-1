@@ -1,3 +1,4 @@
+@import "base.css";
 .cont-permiso{
     display: flex;
     gap: 1rem;
@@ -18,13 +19,12 @@
     font-size: 20px;
     color: var(--color-logo);
 }
-  
 .hoja label {
     display: block;
     font-weight: bold;
     color: #333;
 } 
-input[type="text"],
+.hoja input[type="text"],
 select{
     width: 100%;
     padding: 8px;
@@ -54,7 +54,6 @@ select{
 .hoja .periodo {
     background-color: blueviolet;
     color: rgb(255, 255, 255);
-    padding: 5px 10px;
     border:  2px solid transparent;
     border-radius: 4px;
     cursor: pointer;

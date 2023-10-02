@@ -26,7 +26,7 @@
     <form action="" method="POST" autocomplete="off">
             <label for="search" class="label">Buscar articulo con PHP</label>
             <input class="input" type="search" name="busqueda"> 
-            <button class="button is-link" type="submit" name="enviar">Buscar</button>
+            <button class="my-button is-link" type="submit" name="enviar">Buscar</button>
     </form>
     <?php $where="";
 
@@ -43,7 +43,7 @@
     <form>
         <label for="search" class="label">Buscar articulo con JS</label>
         <input class="light-table-filter input" data-table="table_id" type="text">
-        <button class="button is-link" type="submit" name="enviar">Buscar</button>
+        <button class="my-button is-link" type="submit" name="enviar">Buscar</button>
     </form>
 </div> 
 <!-- TERMINA LA SECCION DEL BUSCADOR -->

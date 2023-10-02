@@ -57,7 +57,7 @@ productoTitle.addEventListener('click', () => {
 // Seleccionar el elemento HTML con el id 'ocultar' y almacenarlo en una variable
 const ocultarBtn = document.getElementById("ocultar");
 const containerNav = document.querySelector(".container_nav");
-const containerDerecha = document.querySelector(".contenedor_derecha");
+const containerContenido = document.querySelector(".contenedor_contenido");
 
 // Agregar un 'escucha de eventos' al elemento 'ocultarBtn' que escucha por clics
 ocultarBtn.addEventListener("click", () => {
@@ -66,7 +66,7 @@ ocultarBtn.addEventListener("click", () => {
   containerNav.classList.toggle("container-hide");
 
   // Alternar la clase 'container-full' en el elemento '
-  containerDerecha.classList.toggle("container-full");
+  containerContenido.classList.toggle("container-full");
 });
 
 

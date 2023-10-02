@@ -40,8 +40,8 @@
 </div><!--cerramos contenedor para los botones de navegacion-->
 
 <div class="a_iniciar_aplicacion">
-    <img class="img_guardia" src="./images/guardia-home.svg" alt="">
-    <a href="./views/aplicacion.php" target="_blank" class="">Iniciar Aplicación</a>
+    <a href="./views/aplicacion.php" target="_blank" class="my-button app_permisos">Aplicacion Permisos</a>
+    <a href="./views/aplicacion.php" target="_blank" class="my-button app_ingresos">Aplicacion Ingresos</a>
 </div>
 
 <div class="texto">

@@ -6,7 +6,8 @@ let date = new Date();
 let diaMes = date.getDate();
 let mes = meses[date.getMonth()];
 let año = date.getFullYear();
-
+let lo = date.getMonth();
+console.log(lo);
 let fecha = document.querySelector(".fecha");
 fecha.textContent = diaMes + "/" + mes + "/" + año;
 
@@ -32,27 +33,38 @@ function cambiaAMPM(){
     periodo.textContent= "p.m";
   }
 }
-function generarPermiso() {
+// function generarPermiso() {
 
-  var resultado = document.querySelector(".resultado");
-  var img = resultado.querySelector("img");
+//   var resultado = document.querySelector(".resultado");
+//   var img = resultado.querySelector("img");
 
-  if (img) {
-    resultado.innerHTML = ` `;
-  }
-    html2canvas(document.querySelector(".hoja")).then(function(captura){
-      // el SRC DE LA IMG crear
-      var img = new Image();
-      img.src = captura.toDataURL();
+//   if (img) {
+//     resultado.innerHTML = ` `;
+//   }
+//     html2canvas(document.querySelector(".hoja")).then(function(captura){
+//       // el SRC DE LA IMG crear
+//       var img = new Image();
+//       img.src = captura.toDataURL();
 
-      // se generooo y se agrego
-      resultado.innerHTML = ` `;
-      resultado.appendChild(img);
+//       // se generooo y se agrego
+//       resultado.innerHTML = ` `;
+//       resultado.appendChild(img);
       
-    });
-}
-function cancelarPermiso(){
-    var resultado = document.querySelector(".resultado");
-    resultado.innerHTML = `<h1>Aqui se generara su permiso</h1> `;
+//     });
+// }
+// function cancelarPermiso(){
+//     var resultado = document.querySelector(".resultado");
+//     resultado.innerHTML = `<h1>Aqui se generara su permiso</h1> `;
 
-}
+// }
+document.getElementById("instructor").addEventListener("change", function() {
+  var formEstudiante = document.getElementById("form-estudiante");
+  var instructorSeleccionado = this.value;
+
+  // Habilitar o deshabilitar el formulario de estudiantes según la selección del instructor
+  if (instructorSeleccionado === "") {
+      formEstudiante.style.display = "none";
+  } else {
+      formEstudiante.style.display = "block";
+  }
+});

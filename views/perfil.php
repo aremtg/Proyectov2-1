@@ -38,7 +38,7 @@ if (!empty($datos_user)) :
 
 
 
-        <div class="modal-info-perfil">
+        <div class="div-info-perfil">
             <div class="info-foto-perfil">
                 <img class="img_user" src="./images/user.png" alt="Foto de perfil">
             </div>
@@ -174,7 +174,7 @@ if (!empty($datos_user)) :
                             </div>
                             
                             
-                            <div class="column">
+                            <div class="column is-flex">
                                 <label for="rol" class="label">Rol</label>
                                 <div class="control select ">
                                     <select name="tiporol">
@@ -182,6 +182,10 @@ if (!empty($datos_user)) :
                                         <option value="Administrador">Administrador</option>
                                         <option value="Celador">Celador</option>
                                     </select>
+                                </div>
+                                <div class="control is-flex">
+                                    <label class="label">Imagen de perfil</label>
+                                    <input type="file" name="imagen_de_perfil" accept="image/*">
                                 </div>
                             </div>
                             <div class="box-button">
