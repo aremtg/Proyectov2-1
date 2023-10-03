@@ -3,10 +3,9 @@
         <div class="logos-nav">
             <h1 class="saci">SSACI</h1><span class="separa_logos"></span><img class="logoSena" src="images/logoSena.svg" alt="">
         </div>
-
-            
-            <nav class="nav">
-                <a class="nav_a tooltip" href="index.php?vista=home">
+        
+            <nav class="nav"  id="nav-menu">
+                <a class="nav_a" href="index.php?vista=home">
                     <img src="images/iconos/casa-icon.svg" alt="">
                     <span class="tiptext">Home</span>
                 </a>
@@ -49,6 +48,12 @@
                 <img src="images/iconos/salir-icon.svg" class="salir-icon" alt="">
                 <span class="tiptext">Salir</span>
             </a>
+            <div class="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
     </div>
     <div class="contenedor_contenido"><!--Abrimos un contenedor para la parte de la derecha-->
        

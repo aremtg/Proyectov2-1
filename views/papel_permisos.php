@@ -48,11 +48,11 @@ date_default_timezone_set("America/Bogota");
                 <h1>Aqui se generara su permiso</h1>
             </div>
     </div>
-    <div class="div-botones">    
-            <a href="index.php?vista=datos_permisos" class="btn_registro-aprendiz">
+    <div class="box-button">    
+            <a href="index.php?vista=datos_permisos" class="my-button button-clr-morado">
                 <input type="image" src="../imagenes/registro-icon.svg" id="registro-aprendiz" alt="">
                 <label for="registro-aprendiz">Ver datos</label>
             </a>
-                <button class="btn-generar-permiso" onclick="generarPermiso()">Generar</button>
-                <button class="btn-cancelar-permiso" onclick="cancelarPermiso()">Cancelar</button>
+                <button class="btn-generar-permiso my-button button-clr-morado" onclick="generarPermiso()">Generar</button>
+                <button class="btn-cancelar-permiso my-button button-clr-morado" onclick="cancelarPermiso()">Cancelar</button>
     </div>

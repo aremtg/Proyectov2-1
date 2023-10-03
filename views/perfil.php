@@ -89,9 +89,9 @@ if (!empty($datos_user)) :
                     </div>
                 </div>
                 <div class="box-button">
-                    <button type="submit" class="button button-editar js-modal-trigger" data-target="modal_update_perfil">
+                    <button type="submit" class="my-button button-clr-verde js-modal-trigger" data-target="modal_update_perfil">
                         <img src="./images/iconos/editar-icon.svg" class="icon">Editar Perfil</button>
-                    <button type="submit" class="button button-eliminar js-modal-trigger" data-target="modal_del_perfil">
+                    <button type="submit" class="my-button button-clr-rojo js-modal-trigger" data-target="modal_del_perfil">
                         <img src="./images/iconos/basura-icon.svg" class="icon">Eliminar</button>
                 </div>
             </div>
@@ -189,7 +189,7 @@ if (!empty($datos_user)) :
                                 </div>
                             </div>
                             <div class="box-button">
-                                <button type="submit" class="button"><img src="./images/save.png" class="mr-1"> Guardar Cambios</button>
+                                <button type="submit" class="my-button button-clr-azul"><img src="./images/save.png" class="mr-1"> Guardar Cambios</button>
                             </div>
                         </div>
                     </form>
@@ -233,7 +233,7 @@ if (!empty($datos_user)) :
                             <label for="delete" class="has-text-danger">Al eliminar la cuenta se borraran los aprendices registrados!</label>
                         </div>
                         <footer class="box-button">
-                            <button type="submit" class="button button-eliminar"><img src="./images/delete.png" class="mr-1">Eliminar</button>
+                            <button type="submit" class="my-button button-clr-rojo"><img src="./images/delete.png" class="mr-1">Eliminar</button>
                         </footer>
                     </form>
                     <!-- se acaba el contenido del modal -->

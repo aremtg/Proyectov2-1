@@ -1,47 +1,202 @@
 @import "base.css";
-/* todos los------------------------------ */
-h3 {
-    font-weight: 700;
-}
 
-.box-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .5rem;
-}
-
-.my-button {
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    gap: .5rem;
-    transition: background-color 0.3s ease;
-}
-
-select {
-    outline: none;
-    border: 1px solid gray;
-    background-color: rgb(230, 230, 230);
-}
-
-.pagination-link.is-current {
-    background-color:var(--verde_sena);
-    border: none;
+.container_nav {
+    position: fixed;
+    width: 95%;
+    transform: translateX(-50%);
+    left: 50%;
+    height: 70px;
+    top: 0;
+    padding: 0 20px;
     border-radius: 50px;
-    color: #fff;
+    background-color: rgb(255, 255, 255);
+    box-shadow: var(--sombra-suave);
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all .5s;
+    z-index: 30;
+}
+.container_nav.abajo {
+    width: 100%;
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+    transition: all 1s;
+}
+.menu-icon {
+    cursor: pointer;
+    display: none; 
+}
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+.menu-icon.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+.menu-icon.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.menu-icon.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -5px);
 }
 
+/* logos nav*/
+.logos-nav {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+}
 
-/* contenedor general-contenido */
+.logos-nav .saci {
+    color: var(--verde_sena);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.logos-nav .separa_logos {
+    width: 3px;
+    background-color: rgb(85, 84, 84);
+    height: 50px;
+    border-radius: 5px;
+}
+
+.logos-nav img {
+    width: 3rem;
+}
+
+/* --------------------------- */
+.nav {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+.nav.active  {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    height:calc(100vh - 60px);
+    top: 60px; /* Ajusta según la altura de tu encabezado */
+    gap: none;
+}
+
+.nav_a {
+    width: 35px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.nav.active .nav_a{
+    width: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: initial;
+    background-color: rgba(190, 190, 190, 0.678);
+    padding: 5px;
+
+    height: auto;
+    gap: 1rem;
+}
+.salir_a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav.active .salir_a{
+    display: block;
+    /* //necesito mostrarlooo */
+}
+.user_a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a img,
+.icon {
+    width: 27px;
+    flex-direction: column;
+}
+.nav.active a img{
+    width: 37px;
+}
+.nav_a .tiptext,
+.user_a .tiptext,
+.salir_a .tiptext {
+    display: none;
+    position: absolute;
+    z-index: 300;
+    transform: translateY(38px);
+    padding: 3px;
+    background-color: rgba(190, 190, 190, 0.678);
+    color: #323232;
+    font-size: 12px;
+    border-radius: 4px;
+    text-align: center;
+    transition: all 2s;
+}
+
+.nav_a:hover .tiptext,
+.user_a:hover .tiptext,
+.salir_a:hover .tiptext {
+    display: block;
+}
+.nav.active .nav_a .tiptext{
+   display: block;
+   position:inherit;
+   transform: none;
+   font-size: 17px;
+   background-color: transparent;
+
+}
+/* foto de perfil, nombre de ususario y rol */
+.cont_user {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.cont_user .img_user {
+    width: 50px;
+    border-radius: 50%;
+    border: 3.5px solid var(--verde_sena);
+}
+
+.nombre_rol {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #7e7e7e;
+}
+
+.user-nombre {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--verde_sena);
+}
+
+.user-rol {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* termina navegador*/
 .contenedor_contenido {
     width: 90%;
     margin-left: auto;
@@ -55,6 +210,28 @@ select {
     flex-direction: column;
     overflow: hidden;
     gap: 1rem;
+}
+
+.a_iniciar_aplicacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: var(--gradi-verde);
+    border-radius: 0 0 20px 20px;
+}
+/* botones, para iniciar app de ingresos y permisos */
+.app_ingresos {
+    background-color: #7209b7ff;
+}
+.app_permisos {
+    background-color: #39a900;
+}
+/* es el numerito que indica la pagina de paginacion */
+.pagination-link.is-current {
+    background-color:var(--verde_sena);
+    border: none;
+    border-radius: 50px;
+    color: #fff;
 }
 
 /* --------comienza home--------- */
@@ -111,32 +288,6 @@ select {
     transition: background-color .5s;
 }
 
-.a_iniciar_aplicacion {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(to bottom, #ffffff, #d4c9f4, #af93e5, #8f5ad0, #7209b7);
-    border-radius: 0 0 20px 20px;
-}
-
-.a_iniciar_aplicacion .app_ingresos {
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 4px;
-    border-radius: 5px;
-    background-color: #7209b7ff;
-    color: white;
-}
-.a_iniciar_aplicacion .app_permisos {
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 4px;
-    border-radius: 5px;
-    background-color: #39a900;
-    color: white;
-}
 /* termina home*/
 /* comienza articulos */
 .box_buscador {
@@ -153,21 +304,7 @@ select {
     border-radius: 5px;
     outline: none;
 }
-
 /* termina articulos */
-
-/* comienza aprendices*/
-/* termina aprendices */
-
-/* comienza tituladas */
-/* termina tituladas */
-
-/* comienza lista de registros */
-/* termina lista de registro */
-
-/* comienza usuarios */
-/* termina usuarios */
-
 /* comiena perfil */
 .div-info-perfil {
     width: 100%;
@@ -207,12 +344,6 @@ select {
     font-size: 18px;
     color: #000000;
 }
-
-.button-eliminar {
-    background-color: red;
-}
-
-
 /* formularios en modal */
 .box-modal {
     width: 100%;
@@ -314,7 +445,7 @@ select {
 }
 
 /* ---------------------------------------------------------- */
-/* ---------------------------------------------------------- */
+/* ---------------------esto no se usa por ahora------------------------------------- */
 .listas {
     color: #dd1919;
     display: flex;
@@ -379,28 +510,6 @@ select {
     transform: rotate(180deg);
 }
 
-/* ---------------------------------------------------------------- */
-.container-full {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding-left: 0 !important;
-}
-
-.icon_detalles {
-    cursor: pointer;
-}
-
-.field input {
-    width: 350px;
-}
-
-.formulario_foto input {
-    width: 250px;
-}
-
 .info_completa {
     display: flex;
     align-items: center;
@@ -420,18 +529,11 @@ select {
     width: 350px;
 }
 
-.is-flex {
-    display: flex !important;
-}
+/* ---------------------------------------------------------------- */
 
 #contenido {
     width: 1200px;
 }
-
-#contenedorMain {
-    border: 1px solid gray;
-}
-
 .error {
     color: #ed1f1f;
     font-size: 1rem;
@@ -466,7 +568,9 @@ select {
     .column {
         width: 100%;
     }
-
+    .menu-icon{
+        display: block;
+    }
     .nav,
     .salir_a {
         display: none;
@@ -480,3 +584,4 @@ select {
         width: 150px;
     }
 }
+

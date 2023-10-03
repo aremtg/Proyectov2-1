@@ -97,8 +97,8 @@
                     </div>
                 </div>
 
-                <footer class="modal-card-foot">
-                    <button type="submit" class="button is-success title is-6"><img src="./images/save.png" class="mr-1">Agregar</button>
+                <footer class="box-button">
+                    <button type="submit" class="my-button button-clr-azul"><img src="./images/save.png" class="mr-1">Agregar</button>
                 </footer>
 
     

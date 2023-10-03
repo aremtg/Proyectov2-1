@@ -2,6 +2,14 @@ window.addEventListener("scroll", function(){
   var containerNav = this.document.querySelector(".container_nav");
   containerNav.classList.toggle("abajo", this.window.scrollY>0);
 })
+
+const menuIcon = document.querySelector(".menu-icon");
+const navMenu = document.querySelector("#nav-menu");
+
+menuIcon.addEventListener("click", function () {
+    menuIcon.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
 // Seleccionar el elementos HTML con la clase 'drop_title' y almacenarlo en una variable
 const usuariosTitle = document.querySelector('.drop_title');
 const usuariosList = document.querySelector('.drop_list');
@@ -49,24 +57,6 @@ productoTitle.addEventListener('click', () => {
 
   // Alternar la clase 'drop_arrow--rotate2' en el elemento 'dropArrow2'
   dropArrow2.classList.toggle('drop_arrow--rotate2');
-});
-
-
-//funcion para ocultar el menu lateral
-
-// Seleccionar el elemento HTML con el id 'ocultar' y almacenarlo en una variable
-const ocultarBtn = document.getElementById("ocultar");
-const containerNav = document.querySelector(".container_nav");
-const containerContenido = document.querySelector(".contenedor_contenido");
-
-// Agregar un 'escucha de eventos' al elemento 'ocultarBtn' que escucha por clics
-ocultarBtn.addEventListener("click", () => {
-
-  // Alternar la clase 'container-hide' en el elemento 'containerNav'
-  containerNav.classList.toggle("container-hide");
-
-  // Alternar la clase 'container-full' en el elemento '
-  containerContenido.classList.toggle("container-full");
 });
 
 

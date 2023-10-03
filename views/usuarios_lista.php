@@ -1,11 +1,10 @@
 <article class="panel-heading"> 
-    <h3 class="">
+    <h3>
         USUARIOS
     </h3>
     <p class="">
         Estimado usuario, recuerde que las modificaciones realizadas en este apartado no se podran modificar despues de 24horas!
     </p>     
-
 </article>
 
     <ul class="ul-mini-nav">
@@ -15,8 +14,8 @@
             </a>
         </li>
 
-        <li class="is-active" href="index.php?vista=usuarios_lista">
-            <a>
+        <li class="is-active">
+            <a  href="index.php?vista=usuarios_lista">
                 <span>LISTA USUARIOS</span>
             </a>
         </li>

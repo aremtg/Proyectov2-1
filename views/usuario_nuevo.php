@@ -7,8 +7,8 @@
     </p>     
 </article>
 
-<div class="tabs is-centered is-boxed">
-    <ul>
+
+    <ul class="ul-mini-nav" >
         <li class="is-active">
             <a href="index.php?vista=usuario_nuevo">
                 <span>AGREGAR</span>
@@ -27,7 +27,6 @@
             </a>
         </li>
     </ul>
-</div>
 
     <?php if(isset($_SESSION['registrado'] )): ?>
 
@@ -123,8 +122,8 @@
                 </div>
             </div>
     </div>
-        <div class="has-text-centered my-4">
-            <button class="button is-success px-5 title is-6" type="submit" value="Registrar"><img src="./images/save.png" alt="" class="mr-2">Registrar</button>
+        <div class="box-button">
+            <button class="my-button button-clr-verde" type="submit" value="Registrar"><img src="./images/save.png" alt="" class="mr-2">Registrar</button>
         </div>
 
 </form>    

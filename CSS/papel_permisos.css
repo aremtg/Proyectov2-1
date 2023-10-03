@@ -1,8 +1,5 @@
 @import "base.css";
-.cont-permiso{
-    display: flex;
-    gap: 1rem;
-}
+
 .hoja {
     width: 400px;
     padding: 10px;
@@ -84,36 +81,4 @@ select{
 .resultado h1 {
     font-size: 24px;
     color: #333; /* Cambia el color a tu preferencia */
-}
-
-/* Estilos para el contenedor de botones */
-.div-botones {
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* Estilos para los botones */
-.btn_registro-aprendiz,
-.btn-generar-permiso,
-.btn-cancelar-permiso {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: blueviolet; /* Cambia el color a tu preferencia */
-    color: #fff; /* Color de texto */
-    border:  2px solid transparent;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-/* Estilo para los botones cuando se les hace hover */
-.btn_registro-aprendiz:hover,
-.btn-generar-permiso:hover,
-.btn-cancelar-permiso:hover {
-    background-color: rgba(255, 255, 255, 0.853); /* Cambia el color de fondo en hover */
-    color:  blueviolet;
-    border:  2px solid blueviolet;
 }

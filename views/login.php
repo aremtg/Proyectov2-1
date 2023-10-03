@@ -37,7 +37,7 @@
                 <label for="input-login-contrasena"><img src="images/candado-icon.svg" alt=""></label>
                 <input class="input-login" id="input-login-contrasena" type="password" placeholder="Contraseña" name="login_clave">
             </div>
-            <button type="submit" class="btn-ingresar">Ingresar</button>
+            <button type="submit" class="my-button btn-ingresar">Ingresar</button>
         </form>
         <?php BorrarErrores(); ?>
 

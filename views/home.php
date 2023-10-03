@@ -39,9 +39,9 @@
     
 </div><!--cerramos contenedor para los botones de navegacion-->
 
-<div class="a_iniciar_aplicacion">
-    <a href="./views/aplicacion.php" target="_blank" class="my-button app_permisos">Aplicacion Permisos</a>
-    <a href="./views/aplicacion.php" target="_blank" class="my-button app_ingresos">Aplicacion Ingresos</a>
+<div class="box-button">
+    <a href="./views/aplicacion.php" target="_blank" class="my-button button-clr-morado">Aplicacion Permisos</a>
+    <a href="./views/aplicacion.php" target="_blank" class="my-button button-clr-verde">Aplicacion Ingresos</a>
 </div>
 
 <div class="texto">
