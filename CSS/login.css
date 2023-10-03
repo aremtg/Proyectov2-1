@@ -69,15 +69,7 @@ body{
     gap: 2rem;
 }
 
-.box-login .control-login .input-login{
-    width: 85%;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    border-radius: 7px;
-    padding: 6px 7px;
-    background-color: var(--color-inputs);
-}
+/* los estilos de los inpust campos estan en base.css */
 .box-login .control-login label img{
     width: 25px;
     transform: translateY(9px);

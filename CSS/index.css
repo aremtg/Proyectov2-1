@@ -583,5 +583,9 @@ a img,
     .div-info-perfil .info-foto-perfil .img_user {
         width: 150px;
     }
+    /* permiso */
+    .hoja, .form-permiso{
+        width: auto;
+    }
 }
 

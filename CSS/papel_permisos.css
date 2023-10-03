@@ -6,6 +6,15 @@
     border-radius: 5px;
     border: 1px solid rgb(196, 196, 196);
     border-top: none;
+    background-image:var(--gradi-violeta);
+}
+.form-permiso{
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(196, 196, 196);
+    border-top: none;
+    background-image:var(--gradi-violeta);
 }
 .div-fecha {
     text-align: right;
@@ -49,7 +58,7 @@ select{
     font-weight: bold;
 }
 .hoja .periodo {
-    background-color: blueviolet;
+    background-color:var(--verde_sena);
     color: rgb(255, 255, 255);
     border:  2px solid transparent;
     border-radius: 4px;

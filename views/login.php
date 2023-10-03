@@ -30,12 +30,12 @@
         <form action="" method="POST" autocomplete="off" id="form-login">
             <div class="control-login">
                 <label for="input-login-usuario"><img src="images/person-icon.svg" alt=""></label>
-                <input class="input-login" id="input-login-usuario" type="text" placeholder="Usuario" name="login_usuario" >
+                <input class="input-form" id="input-login-usuario" type="text" placeholder="Usuario" name="login_usuario" >
             </div>
 
             <div class="control-login">
                 <label for="input-login-contrasena"><img src="images/candado-icon.svg" alt=""></label>
-                <input class="input-login" id="input-login-contrasena" type="password" placeholder="Contraseña" name="login_clave">
+                <input class="input-form" id="input-login-contrasena" type="password" placeholder="Contraseña" name="login_clave">
             </div>
             <button type="submit" class="my-button btn-ingresar">Ingresar</button>
         </form>

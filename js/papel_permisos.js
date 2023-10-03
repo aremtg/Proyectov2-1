@@ -33,38 +33,15 @@ function cambiaAMPM(){
     periodo.textContent= "p.m";
   }
 }
-// function generarPermiso() {
 
-//   var resultado = document.querySelector(".resultado");
-//   var img = resultado.querySelector("img");
+// document.getElementById("instructor").addEventListener("change", function() {
+//   var formEstudiante = document.getElementById("form-estudiante");
+//   var instructorSeleccionado = this.value;
 
-//   if (img) {
-//     resultado.innerHTML = ` `;
+//   // Habilitar o deshabilitar el formulario de estudiantes según la selección del instructor
+//   if (instructorSeleccionado === "") {
+//       formEstudiante.style.display = "none";
+//   } else {
+//       formEstudiante.style.display = "block";
 //   }
-//     html2canvas(document.querySelector(".hoja")).then(function(captura){
-//       // el SRC DE LA IMG crear
-//       var img = new Image();
-//       img.src = captura.toDataURL();
-
-//       // se generooo y se agrego
-//       resultado.innerHTML = ` `;
-//       resultado.appendChild(img);
-      
-//     });
-// }
-// function cancelarPermiso(){
-//     var resultado = document.querySelector(".resultado");
-//     resultado.innerHTML = `<h1>Aqui se generara su permiso</h1> `;
-
-// }
-document.getElementById("instructor").addEventListener("change", function() {
-  var formEstudiante = document.getElementById("form-estudiante");
-  var instructorSeleccionado = this.value;
-
-  // Habilitar o deshabilitar el formulario de estudiantes según la selección del instructor
-  if (instructorSeleccionado === "") {
-      formEstudiante.style.display = "none";
-  } else {
-      formEstudiante.style.display = "block";
-  }
-});
+// });

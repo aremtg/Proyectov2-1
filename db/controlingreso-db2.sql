@@ -92,21 +92,7 @@ CREATE TABLE `usuarios` (
   `rol_usuario` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Volcado de datos para la tabla `usuarios`
---
 
-INSERT INTO `usuarios` (`id_usuario`, `tipoDoc_usuario`, `documento_usuario`, `nombre_usuario`, `apellido_usuario`, `correo_usuario`, `usuario_usuario`, `clave_usuario`, `rol_usuario`) VALUES
-(1, 'Cedula de Ciudadania', '1124989349', 'Tatiana', 'Guzman', 'tgz57031@gmail.com', 'aremtgz', '$2y$10$If02F6luH/ApHSc.qJcpjedPOq6nN1El7AF2hj1L/SrU8Lm1/Oej.', 'Administrador'),
-(2, 'Cedula de Ciudadania', '11212121454', 'Tatiana', 'Guzman Galindo', 'guzman@gmail.com', 'lolo123', '$2y$10$A2x2erWANYrNfqJKT97hp.fp83hvCyAy75HGQT9icw9oZi1U.GkXy', 'Administrador');
-
---
--- Índices para tablas volcadas
---
-
---
--- Indices de la tabla `aprendices`
---
 ALTER TABLE `aprendices`
   ADD PRIMARY KEY (`id_aprendiz`),
   ADD KEY `fk_aprendiz_usuario` (`id_usuario`),
@@ -192,37 +178,17 @@ ALTER TABLE `registro`
 ALTER TABLE `tituladas`
   MODIFY `id_titulada` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
---
--- AUTO_INCREMENT de la tabla `usuarios`
---
 ALTER TABLE `usuarios`
   MODIFY `id_usuario` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
---
--- Restricciones para tablas volcadas
---
-
---
--- Filtros para la tabla `aprendices`
---
 ALTER TABLE `aprendices`
   ADD CONSTRAINT `fk_aprendiz_articulo` FOREIGN KEY (`id_articulo`) REFERENCES `articulos` (`id_articulo`),
   ADD CONSTRAINT `fk_aprendiz_titulada` FOREIGN KEY (`id_titulada`) REFERENCES `tituladas` (`id_titulada`),
   ADD CONSTRAINT `fk_aprendiz_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`);
 
---
--- Filtros para la tabla `lista_instructores`
---
 ALTER TABLE `lista_instructores`
   ADD CONSTRAINT `lista_instructores_ibfk_1` FOREIGN KEY (`nombre_instructor`) REFERENCES `datos_permisos` (`nombre_instructor`);
 
---
--- Filtros para la tabla `registro`
---
 ALTER TABLE `registro`
   ADD CONSTRAINT `fk_registro_aprendiz` FOREIGN KEY (`id_aprendiz`) REFERENCES `aprendices` (`id_aprendiz`);
 COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

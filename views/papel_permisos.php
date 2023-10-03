@@ -44,10 +44,12 @@ date_default_timezone_set("America/Bogota");
                 <label for="motivo">Movitivo de la salida:</label>
                 <textarea id="motivo" rows="4" cols="50"></textarea>
             </div>
-            <div class="resultado">
+           
+    </div>
+    
+    <div class="resultado">
                 <h1>Aqui se generara su permiso</h1>
             </div>
-    </div>
     <div class="box-button">    
             <a href="index.php?vista=datos_permisos" class="my-button button-clr-morado">
                 <input type="image" src="../imagenes/registro-icon.svg" id="registro-aprendiz" alt="">
@@ -56,3 +58,29 @@ date_default_timezone_set("America/Bogota");
                 <button class="btn-generar-permiso my-button button-clr-morado" onclick="generarPermiso()">Generar</button>
                 <button class="btn-cancelar-permiso my-button button-clr-morado" onclick="cancelarPermiso()">Cancelar</button>
     </div>
+<script>
+    function generarPermiso() {
+
+var resultado = document.querySelector(".resultado");
+var img = resultado.querySelector("img");
+
+if (img) {
+  resultado.innerHTML = ` `;
+}
+  html2canvas(document.querySelector(".hoja")).then(function(captura){
+    // el SRC DE LA IMG crear
+    var img = new Image();
+    img.src = captura.toDataURL();
+
+    // se generooo y se agrego
+    resultado.innerHTML = ` `;
+    resultado.appendChild(img);
+    
+  });
+}
+function cancelarPermiso(){
+  var resultado = document.querySelector(".resultado");
+  resultado.innerHTML = `<h1>Aqui se generara su permiso</h1> `;
+
+}
+</script>

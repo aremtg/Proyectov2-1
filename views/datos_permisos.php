@@ -24,22 +24,22 @@
 
 <div>
 <h1>Formulario de Datos de Permisos</h1>
-    <form action="./php/guardarDatosPermisos.php" class="form_ajax" method="POST">
+    <form action="./php/guardarDatosPermisos.php" class="form_ajax form-permiso" method="POST">
         <label for="nombreInstructor">Nombre del Instructor:</label>
         <input type="text" id="nombreInstructor" name="nombre_instructor" required><br><br>
 
         <label for="nombreAprendiz">Nombre del Aprendiz:</label>
-        <input type="text" id="nombreAprendiz" name="nombre_aprendiz" required><br><br>
+        <input type="text" id="nombreAprendiz" class="input-form" name="nombre_aprendiz" required><br><br>
 
         <label for="ficha">Ficha:</label>
-        <input type="text" id="ficha" name="ficha" required><br><br>
+        <input type="text" id="ficha" class="input-form" name="ficha" required><br><br>
 
         <label for="titulada">Titulada:</label>
-        <input type="text" id="titulada" name="titulada"><br><br>
+        <input type="text" id="titulada" class="input-form" name="titulada"><br><br>
 
         <label for="ambiente">Ambiente:</label>
-        <input type="text" id="ambiente" name="ambiente" required><br><br>
+        <input type="text" id="ambiente" class="input-form" name="ambiente" required><br><br>
 
-        <input type="submit" value="Guardar">
+        <input type="submit" class="my-button button-clr-azul" value="Guardar">
     </form>
 </div>
