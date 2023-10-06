@@ -39,7 +39,8 @@
 
         <label for="ambiente">Ambiente:</label>
         <input type="text" id="ambiente" class="input-form" name="ambiente" required><br><br>
-
-        <input type="submit" class="my-button button-clr-azul" value="Guardar">
+        <div class="box-button">
+            <input type="submit" class="my-button button-clr-azul" value="Guardar">
+        </div>
     </form>
 </div>

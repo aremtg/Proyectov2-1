@@ -40,7 +40,7 @@
 </div><!--cerramos contenedor para los botones de navegacion-->
 
 <div class="box-button">
-    <a href="./views/aplicacion.php" target="_blank" class="my-button button-clr-morado">Aplicacion Permisos</a>
+    <a href="./views/aplicacionPermisos.php" target="_blank" class="my-button button-clr-morado">Aplicacion Permisos</a>
     <a href="./views/aplicacion.php" target="_blank" class="my-button button-clr-verde">Aplicacion Ingresos</a>
 </div>
 
