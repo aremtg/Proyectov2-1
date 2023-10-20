@@ -19,6 +19,8 @@
     --fondo-footer:rgba(153, 153, 153, 0.76);
 }
 footer{
+    display: flex;
+    justify-content: center;
     width: 100%;
     background-color: #f0f0f0;
     padding: 10px;
@@ -26,12 +28,10 @@ footer{
     align-self: flex-end;
     bottom: 0;
     background-color: #f0f0f0;
-    padding: 10px;
 }
 .ssaci-cont{
     color: var(--color-logo);
+    text-align: center;
     font-size: 30px;
-    font-family: 'blanka';
     font-weight: 800;
-    margin-top: -10px;
 }
