@@ -24,7 +24,7 @@ body {
     width: 100%;
     min-width: 200px;
     min-height: 100vh;
-    background-image: var(--gradi-verde);
+    background-color: rgb(240, 237, 237);
     display: flex;
     flex-wrap: wrap;
 

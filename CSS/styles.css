@@ -1,0 +1,14 @@
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tus estilos personalizados */
+/* Por ejemplo: */
+.custom-button {
+  /* Estilos para tu botón personalizado */
+  background-color: #3490dc;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}

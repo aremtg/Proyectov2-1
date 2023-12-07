@@ -1,51 +1,57 @@
 <?php 
 date_default_timezone_set("America/Bogota");
 ?>
-<div class="cont_generador">
-    <div class="hoja">
-        <div class="div-fecha">
+<div class="cont_generador flex flex-wrap">
+<div class="hoja p-6 max-w-md mx-auto rounded-md ">
+    <div class="mb-4">
+    <div class="div-fecha">
             <div class="fecha"><?php  ?></div>
         </div>
-        <div>
-            <label for="instructor-lista">Instructor:</label>
-                <select id="instructor-lista">
-                    <option value="opcion1">Opción 1</option>
-                    <option value="opcion2">Opción 2</option>
-                    <option value="opcion3">Opción 3</option>
-                </select>
+        <div class="mb-4">
+            <label class="block text-sm font-semibold mb-2" for="instructor-lista">Instructor:</label>
+            <select class="block w-full border border-gray-300 rounded-md p-2" id="instructor-lista">
+                <option value="opcion1">Opción 1</option>
+                <option value="opcion2">Opción 2</option>
+                <option value="opcion3">Opción 3</option>
+            </select>
         </div>
-        <div>
-            <label for="aprendiz-lista">Aprendiz:</label>
-                <select id="aprendiz-lista">
-                    <option value="opcion1">Opción 1</option>
-                    <option value="opcion2">Opción 2</option>
-                    <option value="opcion3">Opción 3</option>
-                </select>
+        <div class="mb-4">
+            <label class="block text-sm font-semibold mb-2" for="aprendiz-lista">Aprendiz:</label>
+            <select class="block w-full border border-gray-300 rounded-md p-2" id="aprendiz-lista">
+                <option value="opcion1">Opción 1</option>
+                <option value="opcion2">Opción 2</option>
+                <option value="opcion3">Opción 3</option>
+            </select>
         </div>
-        <div>
-            <label for="titulada">Titulada:</label>
-            <input type="text" id="titulada" name="name_titulada" />
+        <div class="mb-4">
+            <label class="block text-sm font-semibold mb-2" for="titulada">Titulada:</label>
+            <input class="block w-full border border-gray-300 rounded-md p-2" type="text" id="titulada" name="name_titulada" />
         </div>
-        <div class="div-ficha-ambiente">
-            <div>
-                <label for="ficha">Ficha:</label>
-                <input type="text" id="ficha" name="icha"/>
+        <div class="mb-4">
+            <div class="flex justify-between">
+                <div class="w-1/2 pr-2">
+                    <label class="block text-sm font-semibold mb-2" for="ficha">Ficha:</label>
+                    <input class="block w-full border border-gray-300 rounded-md p-2" type="text" id="ficha" name="icha"/>
+                </div>
+                <div class="w-1/2 pl-2">
+                    <label class="block text-sm font-semibold mb-2" for="ambiente">Ambiente:</label>
+                    <input class="block w-full border border-gray-300 rounded-md p-2" type="text" id="ambiente" name="name_ambiente" />
+                </div>
             </div>
-            <div>
-                <label for="ambiente">Ambiente:</label>
-                <input type="text" id="ambiente" name="name_ambiente" />
-            </div>
-        </div> 
-        <div class="div-hora">
-            <label for="hora">Hora de salida:</label>
+        </div>
+        
+    <div class="div-hora flex justify-between">
+            <label for="hora" class='block text-sm font-semibold mb-2'>Hora de salida:</label>
             <div id="hora" class="hora"></div>
             <div class="periodo" onclick="cambiaAMPM()">a.m</div>
         </div>
-        <div class="div-motivo">
-            <label for="motivo">Movitivo de la salida:</label>
-            <textarea id="motivo" rows="4" cols="50"></textarea>
+        <div class="mb-4">
+            <label class="block text-sm font-semibold mb-2" for="motivo">Motivo de la salida:</label>
+            <textarea class="block w-full border border-gray-300 rounded-md p-2" id="motivo" rows="4" cols="50"></textarea>
         </div>
     </div>
+</div>
+
   
     <div class="resultado">
         <h1>Aqui se generara su permiso</h1>
@@ -62,4 +68,3 @@ date_default_timezone_set("America/Bogota");
                 <button class="btn-cancelar-permiso my-button button-clr-morado" onclick="cancelarPermiso()">Cancelar</button>
     </div>
    
-

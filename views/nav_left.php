@@ -1,5 +1,5 @@
     <?php ob_start() ?>
-    <div class="container_nav"><!--Abrimos un contenedor para la parte del navegador que esta a la izquierda-->
+    <div class="myNav fixed h-70 px-20 rounded-full bg-white shadow-sm flex justify-between items-center gap-4 z-30"><!--Abrimos un contenedor para la parte del navegador que esta a la izquierda-->
         <div class="logos-nav">
             <h1 class="saci">SSACI</h1><span class="separa_logos"></span><img class="logoSena" src="images/logoSena.svg" alt="">
         </div>

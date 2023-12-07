@@ -12,29 +12,29 @@
             $totalRegistro = obtenerRegistros($db,'registro','id_registro',null);
         ?>
 
-<div class="panel_iconos"><!--Abrimos un contenedor para los botones de navegacion-->
-    <a href="index.php?vista=usuarios_lista" class="iconos">
-        <h2 class="">USUARIOS</h2>
-        <p class=""><?= $totalUsuarios; ?> Registrados</p>
+<div class=" panel_iconos rounded-3xl shadow-sm py-3"><!--Abrimos un contenedor para los botones de navegacion-->
+    <a href="index.php?vista=usuarios_lista" class="flex flex-col justify-center items-center bg-white rounded-3xl p-8 transition duration-300 transform hover:scale-90">
+        <h2 class="text-2xl font-semibold mb-2 text-gray-800 hover:text-gray-900">USUARIOS</h2>
+        <p class="text-sm text-gray-600"><?= $totalUsuarios; ?> Registrados</p>
     </a>
-    <a href="index.php?vista=aprendices_lista" class="iconos">
-        <h2 class="titulo_productos">APRENDICES</h2>
-        <p class=""><?= $totalAprendiz; ?> Registrados</p>
-    </a>
-
-    <a href="index.php?vista=tituladas_lista" class="iconos">
-        <h2 class="titulo_productos">TITULADAS</h2>
-        <p class=""><?= $totaltitulada; ?> Registrados</p>
+    <a href="index.php?vista=aprendices_lista" class="flex flex-col justify-center items-center bg-white rounded-3xl p-8 transition duration-300 transform hover:scale-90">
+        <h2 class="text-2xl font-semibold mb-2 text-gray-800 hover:text-gray-900">APRENDICES</h2>
+        <p class="text-sm text-gray-600"><?= $totalAprendiz; ?> Registrados</p>
     </a>
 
-    <a href="index.php?vista=articulos" class="iconos">
-        <h2 class="titulo_productos">ARTICULOS</h2>
-        <p class=""><?= $totalarticulo; ?> Registrados</p>
+    <a href="index.php?vista=tituladas_lista" class="flex flex-col justify-center items-center bg-white rounded-3xl p-8 transition duration-300 transform hover:scale-90">
+        <h2 class="text-2xl font-semibold mb-2 text-gray-800 hover:text-gray-900">TITULADAS</h2>
+        <p class="text-sm text-gray-600"><?= $totaltitulada; ?> Registrados</p>
     </a>
 
-    <a href="index.php?vista=articulos" class="iconos">
-        <h2 class="titulo_productos">REGISTROS</h2>
-        <p class=""><?= $totalRegistro; ?> Registrados</p>
+    <a href="index.php?vista=articulos" class="flex flex-col justify-center items-center bg-white rounded-3xl p-8 transition duration-300 transform hover:scale-90">
+        <h2 class="text-2xl font-semibold mb-2 text-gray-800 hover:text-gray-900">ARTICULOS</h2>
+        <p class="text-sm text-gray-600"><?= $totalarticulo; ?> Registrados</p>
+    </a>
+
+    <a href="index.php?vista=articulos" class="flex flex-col justify-center items-center bg-white rounded-3xl p-8 transition duration-300 transform hover:scale-90">
+        <h2 class="text-2xl font-semibold mb-2 text-gray-800 hover:text-gray-900">REGISTROS</h2>
+        <p class="text-sm text-gray-600"><?= $totalRegistro; ?> Registrados</p>
     </a>
     
 </div><!--cerramos contenedor para los botones de navegacion-->
@@ -44,13 +44,3 @@
     <a href="./views/aplicacion.php" target="_blank" class="my-button button-clr-verde">Aplicacion Ingresos</a>
 </div>
 
-<div class="texto">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur omnis dolores voluptatem culpa vero repellendus aliquid qui aut amet adipisci, deserunt id? Soluta repudiandae eum omnis voluptatem? Veniam, provident alias.
-    Labore corrupti ea incidunt eligendi dolorem iusto voluptatum ex, eos voluptates, possimus omnis quo perspiciatis, repudiandae debitis quidem maiores atque magni odit nisi tempora nihil. Dicta et velit sequi provident.
-    Rem delectus sequi eum possimus consequuntur perspiciatis laborum vitae cumque dolores, fugiat modi ad consequatur. Delectus obcaecati necessitatibus quasi distinctio qui ex id excepturi. Repellat pariatur nostrum veniam corrupti ducimus.
-    </p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur omnis dolores voluptatem culpa vero repellendus aliquid qui aut amet adipisci, deserunt id? Soluta repudiandae eum omnis voluptatem? Veniam, provident alias.
-    Labore corrupti ea incidunt eligendi dolorem iusto voluptatum ex, eos voluptates, possimus omnis quo perspiciatis, repudiandae debitis quidem maiores atque magni odit nisi tempora nihil. Dicta et velit sequi provident.
-    Rem delectus sequi eum possimus consequuntur perspiciatis laborum vitae cumque dolores, fugiat modi ad consequatur. Delectus obcaecati necessitatibus quasi distinctio qui ex id excepturi. Repellat pariatur nostrum veniam corrupti ducimus.
-    </p>
-</div>
